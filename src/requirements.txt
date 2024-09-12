@@ -2,7 +2,7 @@ numpy
 pandas
 scipy
 cvxpy
-PyPortfolioOpt
+PyPortfolioOpt==1.5.5
 streamlit
 statsmodels
 scipy
