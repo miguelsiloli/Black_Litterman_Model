@@ -6,4 +6,4 @@ PyPortfolioOpt
 streamlit
 statsmodels
 scipy
-sklearn
+scikit-learn
