@@ -48,8 +48,6 @@ def print_performance_metrics(performance):
 # Load asset data from Excel
 assets = read_asset_data("data/assets.xlsx")
 
-st.set_page_config(layout="wide")
-
 # growth and inflation need to be within -4, 4 because they are standardized
 macro_signal = build_macro_signal()
 momentum_signal = build_momentum_signal()
