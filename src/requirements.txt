@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+cvxpy
+pypfopt
+streamlit
+statsmodels
+scipy
+sklearn
