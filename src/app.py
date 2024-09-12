@@ -170,6 +170,8 @@ if st.sidebar.button("Run Simulation"):
         rebalance_period=rebalance_period,  # Rebalancing period (months)
     )
 
+    print_performance_metrics(performance)
+
     portfolio_data = performance["portfolio"]
     regime_portfolio_cumulative_returns = (1 + portfolio_data).cumprod() * 100
 
