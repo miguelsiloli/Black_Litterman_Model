@@ -216,7 +216,7 @@ def build_momentum_signal() -> pd.DataFrame:
 
     # Apply momentum signal logic
     momentum_signal = momentum.applymap(
-        lambda x: 1 if x > 0 else -1 if x < 0 else np.NaN
+        lambda x: 1 if x > 0 else -1 if x < 0 else np.nan
     )
 
     return momentum_signal
