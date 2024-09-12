@@ -40,9 +40,9 @@ def print_performance_metrics(performance):
     portfolio_return, portfolio_volatility, portfolio_shape = calculate_final_metrics(
         performance
     )
-    print("Return:", portfolio_return)
-    print("Volatility:", portfolio_volatility)
-    print("Sharpe:", portfolio_shape)
+    st.write("Return:", portfolio_return)
+    st.write("Volatility:", portfolio_volatility)
+    st.write("Sharpe:", portfolio_shape)
 
 
 # Load asset data from Excel
@@ -169,10 +169,6 @@ if st.sidebar.button("Run Simulation"):
         n_bootstraps=n_bootstraps,  # Number of bootstrap samples
         rebalance_period=rebalance_period,  # Rebalancing period (months)
     )
-
-
-    # Print the final performance metrics
-    print_performance_metrics(performance)
 
     portfolio_data = performance["portfolio"]
     regime_portfolio_cumulative_returns = (1 + portfolio_data).cumprod() * 100
