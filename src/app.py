@@ -150,76 +150,45 @@ asset.index = pd.to_datetime(asset.index)
 regime_portfolio = initialize_portfolio(asset, start_date)
 portfolio = regime_portfolio.copy()
 
-# # Create line plots for Growth and Inflation
-# st.header("Economic Regime: Growth and Inflation Over Time")
-# plt.figure(figsize=(10, 6))
-# plt.plot(economic_regime.index, economic_regime['Growth'], marker='o', linestyle='-', color='b', label='Growth')
-# plt.plot(economic_regime.index, economic_regime['Inflation'], marker='o', linestyle='-', color='r', label='Inflation')
-
-# # Set y-axis limits for better view (as per your request)
-# plt.ylim(-5, 5)
-
-# # Add labels and legends
-# plt.xlabel("Date")
-# plt.ylabel("Value")
-# plt.title("Growth and Inflation Over Time")
-# plt.legend()
-
-# Display the plot using Streamlit
-# st.pyplot(plt)
-
-
-# tt = prepare_current_data(economic_regime, start_date)
-
-# # Forecasting raw economic data
-# ariam_forecasting = forecast_economic_signals(tt)
-
-# # Compute growth and inflation signals
-# Growth, Inflation = calculate_growth_inflation(ariam_forecasting)
-
-# # Compute L1 trend filter of growth and inflation signals
-# tt = update_trend_filters(tt, Growth, Inflation, ariam_forecasting)
-# Growth_direction, Inflation_direction = determine_trend_directions(tt)
-# economic_regime_value = determine_economic_regime(Growth_direction, Inflation_direction)
-
-performance = simulate_portfolio_allocation(
-    economic_regime,  # Preprocessed economic regime data
-    regime_portfolio,  # Initialized regime portfolio
-    portfolio,  # Portfolio to simulate
-    asset,  # Asset data
-    value_signal,  # Value signal data
-    momentum_signal,  # Momentum signal data
-    sentiment_signal,  # Sentiment signal data
-    performance,  # Performance DataFrame
-    start_date,  # Simulation start date
-    end_date,  # Simulation end date
-    arima_order=arima_order,  # ARIMA order from sidebar
-    min_weight_bound=min_weight_bound,  # Minimum portfolio weight bound
-    max_weight_bound=max_weight_bound,  # Maximum portfolio weight bound
-    max_volatility=max_volatility,  # Maximum portfolio volatility
-    n_bootstraps=n_bootstraps,  # Number of bootstrap samples
-    rebalance_period=rebalance_period,  # Rebalancing period (months)
-)
+if st.sidebar.button("Run Simulation"):
+    performance = simulate_portfolio_allocation(
+        economic_regime,  # Preprocessed economic regime data
+        regime_portfolio,  # Initialized regime portfolio
+        portfolio,  # Portfolio to simulate
+        asset,  # Asset data
+        value_signal,  # Value signal data
+        momentum_signal,  # Momentum signal data
+        sentiment_signal,  # Sentiment signal data
+        performance,  # Performance DataFrame
+        start_date,  # Simulation start date
+        end_date,  # Simulation end date
+        arima_order=arima_order,  # ARIMA order from sidebar
+        min_weight_bound=min_weight_bound,  # Minimum portfolio weight bound
+        max_weight_bound=max_weight_bound,  # Maximum portfolio weight bound
+        max_volatility=max_volatility,  # Maximum portfolio volatility
+        n_bootstraps=n_bootstraps,  # Number of bootstrap samples
+        rebalance_period=rebalance_period,  # Rebalancing period (months)
+    )
 
 
-# Print the final performance metrics
-print_performance_metrics(performance)
+    # Print the final performance metrics
+    print_performance_metrics(performance)
 
-portfolio_data = performance["portfolio"]
-regime_portfolio_cumulative_returns = (1 + portfolio_data).cumprod() * 100
+    portfolio_data = performance["portfolio"]
+    regime_portfolio_cumulative_returns = (1 + portfolio_data).cumprod() * 100
 
-# Set up Streamlit app layout
-st.title("Cumulative Portfolio Returns")
+    # Set up Streamlit app layout
+    st.title("Cumulative Portfolio Returns")
 
-# Plot cumulative returns using Matplotlib
-fig, ax = plt.subplots()
-ax.plot(regime_portfolio_cumulative_returns, label="Cumulative Returns", color="blue")
-ax.set_xlabel("Date")
-ax.set_ylabel("Cumulative Returns")
-ax.set_title("Portfolio Cumulative Returns Over Time")
-ax.legend()
+    # Plot cumulative returns using Matplotlib
+    fig, ax = plt.subplots()
+    ax.plot(regime_portfolio_cumulative_returns, label="Cumulative Returns", color="blue")
+    ax.set_xlabel("Date")
+    ax.set_ylabel("Cumulative Returns")
+    ax.set_title("Portfolio Cumulative Returns Over Time")
+    ax.legend()
 
-ax.xaxis.set_major_formatter(DateFormatter("%Y"))
+    ax.xaxis.set_major_formatter(DateFormatter("%Y"))
 
-# Display the plot in Streamlit
-st.pyplot(fig)
+    # Display the plot in Streamlit
+    st.pyplot(fig)

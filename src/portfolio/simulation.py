@@ -4,7 +4,7 @@ from portfolio.economic_regime import (
     determine_economic_regime,
     forecast_economic_signals,
 )
-from portfolio.forecasting import (w
+from portfolio.forecasting import (
     calculate_growth_inflation,
     update_trend_filters,
     determine_trend_directions,
