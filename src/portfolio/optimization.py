@@ -142,10 +142,14 @@ def perform_portfolio_optimization(
         ef = EfficientFrontier(
             mu, Sigma, solver="SCS", weight_bounds=(min_weight_bound, max_weight_bound)
         )
+        ef.add_constraint(lambda w: w.sum() == 1)
         ef.efficient_risk(max_volatility, market_neutral=False)
         cleaned_weights = ef.clean_weights()
         bootstrapped_weights[i, :] = np.array(list(cleaned_weights.values()))
+        # total_weight_sum = np.sum(list(cleaned_weights.values()))
+        # print("Total weight sum:", total_weight_sum)
 
     average_weights = np.mean(bootstrapped_weights, axis=0)
+    # print(np.sum(average_weights, axis=0))
 
     return dict(zip(asset.columns, average_weights))

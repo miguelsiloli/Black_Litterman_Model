@@ -71,8 +71,8 @@ arima_order = st.sidebar.selectbox(
 # Min Weight Bound Slider
 min_weight_bound = st.sidebar.slider(
     "Min Portfolio Weight Bound",
-    min_value=-0.5,
-    max_value=0.5,
+    min_value=0.0,
+    max_value=0.2,
     step=0.01,
     value=0.0,
     help="The minimum weight that can be assigned to any asset in the portfolio. "
@@ -106,7 +106,7 @@ n_bootstraps = st.sidebar.slider(
     min_value=25,
     max_value=250,
     step=25,
-    value=100,
+    value=50,
     help="The number of bootstrap samples used in the portfolio optimization process. "
     "A higher number increases robustness but also computational time.",
 )
@@ -149,7 +149,7 @@ regime_portfolio = initialize_portfolio(asset, start_date)
 portfolio = regime_portfolio.copy()
 
 if st.sidebar.button("Run Simulation"):
-    performance = simulate_portfolio_allocation(
+    performance, portfolio_weights = simulate_portfolio_allocation(
         economic_regime,  # Preprocessed economic regime data
         regime_portfolio,  # Initialized regime portfolio
         portfolio,  # Portfolio to simulate
@@ -171,6 +171,7 @@ if st.sidebar.button("Run Simulation"):
     print_performance_metrics(performance)
 
     portfolio_data = performance["portfolio"]
+
     regime_portfolio_cumulative_returns = (1 + portfolio_data).cumprod() * 100
 
     # Set up Streamlit app layout
@@ -188,3 +189,62 @@ if st.sidebar.button("Run Simulation"):
 
     # Display the plot in Streamlit
     st.pyplot(fig)
+
+    st.write(portfolio_weights)
+
+    import plotly.graph_objects as go
+
+    # Create a list to store the traces (one trace per asset/column)
+    traces = []
+
+    # Get the index (dates) for the X-axis
+    x = portfolio_weights.index
+
+    # Loop through each column in the DataFrame to create a trace for each asset
+    for column in portfolio_weights.columns:
+        traces.append(go.Bar(
+            x=x,
+            y=portfolio_weights[column],
+            name=column
+        ))
+
+    # Create the figure with stacked bar mode
+    fig = go.Figure(data=traces)
+
+    # Set the layout for the chart
+    fig.update_layout(
+        barmode='stack',  # Stacks the bars
+        title='Stacked Histogram of Portfolio Weights Over Time',
+        xaxis_title='Date',
+        yaxis_title='Weights',
+        xaxis=dict(tickformat='%Y-%m-%d'),  # Format dates on X-axis
+        legend_title='Assets',
+        template='plotly_white'  # Set the theme to white for better visuals
+    )
+    st.plotly_chart(fig)
+    st.write(portfolio_weights)
+
+    # Filter based on the start date
+    regimes.index = pd.to_datetime(regimes.index)
+    regimes = regimes[regimes.index> start_date]
+
+    # Begin plotting
+    plt.figure(figsize=(10, 6))
+
+    color = ['crimson','yellowgreen','forestgreen','darkorange'] #Recession, Early-Cycle, Mid-Cycle, Late-Cycle
+
+    for value, color in zip(regimes['EconomicRegime'].sort_values().unique(), color):
+        plt.fill_between(regimes.index, -4, 4, where=regimes['EconomicRegime'] == value, color=color, alpha=0.3)
+
+    plt.plot(regimes.index, regimes['Growth'], label='Growth')
+    plt.plot(regimes.index, regimes['Inflation'], label='Inflation')
+
+    # Add labels and legend
+    plt.ylim(-4, 4)
+    plt.xlabel('Date')
+    plt.ylabel('Value')
+    plt.title('Growth and Inflation Over Time by Economic Regime')
+    plt.legend(loc='upper left')
+
+    # Render plot using Streamlit
+    st.pyplot(plt)

@@ -19,6 +19,7 @@ from portfolio.utils import (
 )
 
 import pandas as pd
+import numpy as np
 
 
 def simulate_portfolio_allocation(
@@ -145,6 +146,7 @@ def simulate_portfolio_allocation(
     counter = 0
     last_updated_regime_weights: Dict[str, float] = {}
     last_updated_weights: Dict[str, float] = {}
+    weights_df = pd.DataFrame()
 
     while current_date <= end_date:
         tt = prepare_current_data(economic_regime, current_date)
@@ -200,19 +202,16 @@ def simulate_portfolio_allocation(
             regime_weights = last_updated_regime_weights
             portfolio_weights = last_updated_weights
 
-        # Update regime portfolio and overall portfolio allocations
-        regime_portfolio = update_portfolio_weights(
-            regime_portfolio, regime_weights, current_date
-        )
-        portfolio = update_portfolio_weights(portfolio, portfolio_weights, current_date)
-
         # Calculate portfolio performance for the current month
         performance = calculate_portfolio_performance(
             performance, tt, portfolio_weights
         )
 
+        weights_df = pd.concat([weights_df, pd.DataFrame([portfolio_weights], index=[current_date])], ignore_index=False)
+        weights_df = weights_df.div(weights_df.sum(axis=1), axis=0)
+
         # Move to the next month
         current_date += pd.offsets.MonthBegin(1)
         counter += 1
 
-    return performance
+    return performance, weights_df
