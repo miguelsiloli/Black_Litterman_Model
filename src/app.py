@@ -228,23 +228,24 @@ if st.sidebar.button("Run Simulation"):
     regimes.index = pd.to_datetime(regimes.index)
     regimes = regimes[regimes.index> start_date]
 
-    # Begin plotting
-    plt.figure(figsize=(10, 6))
+    # # Begin plotting
+    # plt.figure(figsize=(10, 6))
 
-    color = ['crimson','yellowgreen','forestgreen','darkorange'] #Recession, Early-Cycle, Mid-Cycle, Late-Cycle
+    # color = ['crimson','yellowgreen','forestgreen','darkorange'] #Recession, Early-Cycle, Mid-Cycle, Late-Cycle
 
-    for value, color in zip(regimes['EconomicRegime'].sort_values().unique(), color):
-        plt.fill_between(regimes.index, -4, 4, where=regimes['EconomicRegime'] == value, color=color, alpha=0.3)
+    # for value, color in zip(regimes['EconomicRegime'].sort_values().unique(), color):
+    #     plt.fill_between(regimes.index, -4, 4, where=regimes['EconomicRegime'] == value, color=color, alpha=0.3)
 
-    plt.plot(regimes.index, regimes['Growth'], label='Growth')
-    plt.plot(regimes.index, regimes['Inflation'], label='Inflation')
+    # plt.plot(regimes.index, regimes['Growth'], label='Growth')
+    # plt.plot(regimes.index, regimes['Inflation'], label='Inflation')
+    # # plt.legend(['Growth Indicator', 'Inflation Indicator', 'Growth Down & Inflation Down','Growth Up & Inflation Down','Growth Up & Inflation Up','Growth Down & Inflation Up'], loc = 'lower left', fontsize='small')
 
-    # Add labels and legend
-    plt.ylim(-4, 4)
-    plt.xlabel('Date')
-    plt.ylabel('Value')
-    plt.title('Growth and Inflation Over Time by Economic Regime')
-    plt.legend(loc='upper left')
+    # # Add labels and legend
+    # plt.ylim(-4, 4)
+    # plt.xlabel('Date')
+    # plt.ylabel('Value')
+    # plt.title('Growth and Inflation Over Time by Economic Regime')
+    # plt.legend(loc='upper left')
 
-    # Render plot using Streamlit
-    st.pyplot(plt)
+    # # Render plot using Streamlit
+    # st.pyplot(plt)
