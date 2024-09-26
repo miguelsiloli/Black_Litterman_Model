@@ -20,7 +20,14 @@ from portfolio.utils import (
 
 import pandas as pd
 import numpy as np
+import warnings
+from logger import logger
+import streamlit as st
 
+def normalize_portfolio_weights(portfolio_weights):
+    total_weight = sum(portfolio_weights.values())  # Sum of all values in the dictionary
+    normalized_weights = {key: value / total_weight for key, value in portfolio_weights.items()}
+    return normalized_weights
 
 def simulate_portfolio_allocation(
     economic_regime: pd.DataFrame,
@@ -34,7 +41,7 @@ def simulate_portfolio_allocation(
     start_date: pd.Timestamp,
     end_date: pd.Timestamp,
     arima_order: tuple = (1, 1, 1),  # ARIMA model order for forecasting
-    min_weight_bound: float = -0.25,  # Minimum portfolio weight
+    min_weight_bound: float = 0,  # Minimum portfolio weight
     max_weight_bound: float = 0.25,  # Maximum portfolio weight
     max_volatility: float = 0.25,  # Maximum volatility for portfolio optimization
     n_bootstraps: int = 100,  # Number of bootstrap samples for portfolio optimization
@@ -142,11 +149,25 @@ def simulate_portfolio_allocation(
     >>> print(result)
     """
 
+    for df_name, df in zip(['economic_regime', 'regime_portfolio', 'portfolio', 
+                             'asset', 'value_signal', 'momentum_signal', 
+                             'sentiment_signal', 'performance'], 
+                            [economic_regime, regime_portfolio, portfolio, 
+                             asset, value_signal, momentum_signal, 
+                             sentiment_signal, performance]):
+        if df.index.equals(performance.index):
+            continue
+        else:
+            warnings.warn(f"{df_name} does not have the same index as performance. Results may be inconsistent.")
+
+
     current_date = start_date
-    counter = 0
+    counter = 1
     last_updated_regime_weights: Dict[str, float] = {}
     last_updated_weights: Dict[str, float] = {}
-    weights_df = pd.DataFrame()
+
+    portfolio_weights_list = []
+    date_list = []
 
     while current_date <= end_date:
         tt = prepare_current_data(economic_regime, current_date)
@@ -202,16 +223,25 @@ def simulate_portfolio_allocation(
             regime_weights = last_updated_regime_weights
             portfolio_weights = last_updated_weights
 
-        # Calculate portfolio performance for the current month
-        performance = calculate_portfolio_performance(
-            performance, tt, portfolio_weights
-        )
+        # need to normalize this 
+        # bro why is this giving me such a hassle, this should be handle in the engine
+        # by adding addition contraint such as weights.sum(axis=1) == 1
+        portfolio_weights = normalize_portfolio_weights(portfolio_weights)
 
-        weights_df = pd.concat([weights_df, pd.DataFrame([portfolio_weights], index=[current_date])], ignore_index=False)
-        weights_df = weights_df.div(weights_df.sum(axis=1), axis=0)
+        # Calculate portfolio performance for the current month
+        performance, returns = calculate_portfolio_performance(
+            performance, tt, portfolio_weights, current_date
+        )
+        logger.info(returns)
+        # Append the portfolio weights and the current date to the respective lists
+        portfolio_weights_list.append(portfolio_weights)
+        date_list.append(current_date)
 
         # Move to the next month
         current_date += pd.offsets.MonthBegin(1)
         counter += 1
 
-    return performance, weights_df
+    weights_df = pd.DataFrame(portfolio_weights_list, index=date_list)
+    weights_df = weights_df.div(weights_df.sum(axis=1), axis=0)
+
+    return performance, weights_df, tt

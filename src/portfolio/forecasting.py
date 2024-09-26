@@ -48,7 +48,7 @@ def calculate_growth_inflation(ariam_forecasting):
     return Growth, Inflation
 
 
-def update_trend_filters(tt, Growth, Inflation, ariam_forecasting):
+def update_trend_filters(economic_regime, Growth, Inflation, ariam_forecasting):
     """
     Updates the economic regime DataFrame with new Growth and Inflation values,
     and applies trend filtering to the updated DataFrame.
@@ -109,22 +109,24 @@ def update_trend_filters(tt, Growth, Inflation, ariam_forecasting):
 
     """
     # Create a new index for the next month
-    t1_index = tt.index[-1] + pd.offsets.MonthEnd(1)
+    t1_index = economic_regime.index[-1] + pd.offsets.MonthEnd(1)
+
+    num_placeholders = len(economic_regime.columns) - len(ariam_forecasting) - 2
 
     # Combine forecasted values with placeholders for other columns
-    t1_values = ariam_forecasting + [Growth, Inflation] + [0] * 22
+    t1_values = ariam_forecasting + [Growth, Inflation] + [0] * num_placeholders
 
     # Create a new DataFrame row with the combined values
-    t1_row = pd.DataFrame([t1_values], index=[t1_index], columns=tt.columns)
+    t1_row = pd.DataFrame([t1_values], index=[t1_index], columns=economic_regime.columns)
 
     # Append the new row to the DataFrame
-    tt = pd.concat([tt, t1_row])
+    economic_regime = pd.concat([economic_regime, t1_row])
 
     # Apply trend filtering to the 'Growth' and 'Inflation' columns
-    trend_filter(tt, "Growth")
-    trend_filter(tt, "Inflation")
+    trend_filter(economic_regime, "Growth")
+    trend_filter(economic_regime, "Inflation")
 
-    return tt
+    return economic_regime
 
 
 def determine_trend_directions(tt):

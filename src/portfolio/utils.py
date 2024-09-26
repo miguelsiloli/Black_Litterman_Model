@@ -1,4 +1,5 @@
 import pandas as pd
+from logger import logger
 
 
 def apply_technical_signals(
@@ -110,20 +111,23 @@ def apply_technical_signals(
     return portfolio_weights
 
 
-def initialize_portfolio(asset, current_date):
+def initialize_portfolio(asset, current_date, selected_columns=None):
     """
-    Initialize a portfolio DataFrame with zeros based on the given asset data and current date.
+    Initialize a portfolio DataFrame with zeros based on the given asset data, current date, and selected columns.
 
     This function creates a portfolio DataFrame by filtering the asset data to include only the rows
-    where the date is greater than the current date. The portfolio is then initialized with zero
-    values for all assets, indicating no initial allocation.
+    where the date is greater than the current date and includes only the selected columns. The portfolio
+    is then initialized with zero values for all assets, indicating no initial allocation.
 
     Parameters:
     - asset (pd.DataFrame): A DataFrame containing asset data, with dates as the index and asset prices or returns as columns.
     - current_date (pd.Timestamp): A Timestamp object representing the current date for filtering the asset data.
+    - selected_columns (list, optional): A list of column names to be included in the portfolio. 
+                                         If None, all columns from the asset data are selected.
 
     Returns:
-    - pd.DataFrame: A DataFrame initialized with zeros, containing the same structure as the filtered asset data.
+    - pd.DataFrame: A DataFrame initialized with zeros, containing the same structure as the filtered asset data
+                    and selected columns.
 
     Example:
     ----------
@@ -132,34 +136,32 @@ def initialize_portfolio(asset, current_date):
     >>>         'Asset_B': [-0.02, 0.01, 0.03, -0.01, 0.02]}
     >>> asset = pd.DataFrame(data, index=pd.to_datetime(['2023-01-01', '2023-02-01', '2023-03-01', '2023-04-01', '2023-05-01']))
     >>> current_date = pd.Timestamp('2023-02-01')
+    >>> selected_columns = ['Asset_A']
 
     >>> # Initialize the portfolio
-    >>> portfolio = initialize_portfolio(asset, current_date)
-
-    Example Input:
-    --------------
-    asset:
-                     Asset_A  Asset_B
-    2023-01-01       0.01      -0.02
-    2023-02-01       0.02       0.01
-    2023-03-01      -0.01       0.03
-    2023-04-01       0.03      -0.01
-    2023-05-01       0.04       0.02
-
-    current_date: Timestamp('2023-02-01')
+    >>> portfolio = initialize_portfolio(asset, current_date, selected_columns)
 
     Example Output:
     ---------------
     portfolio:
-                     Asset_A  Asset_B
-    2023-03-01       0.0        0.0
-    2023-04-01       0.0        0.0
-    2023-05-01       0.0        0.0
-
+                     Asset_A  
+    2023-03-01       0.0        
+    2023-04-01       0.0        
+    2023-05-01       0.0        
     """
+    # Filter rows based on the current date
     portfolio = asset.loc[asset.index > current_date]
+    
+    # If selected_columns is provided, filter the DataFrame to include only those columns
+    if selected_columns is not None:
+        # Only include columns that are both in the asset data and selected_columns
+        portfolio = portfolio[selected_columns]
+    
+    # Initialize the portfolio with zeros
     portfolio.iloc[:, :] = 0
+    
     return portfolio
+
 
 
 def update_portfolio_weights(portfolio, weights, current_date):
@@ -245,14 +247,40 @@ def update_portfolio_weights(portfolio, weights, current_date):
     return filtered_portfolio
 
 
-def calculate_portfolio_performance(performance, tt, portfolio_weights):
+def calculate_portfolio_performance(performance, tt, portfolio_weights, current_date):
+    # Reindex the tt DataFrame with the date range
     new_index = pd.date_range(start=tt.index.min(), end=tt.index.max(), freq="MS")
     tt = tt.reindex(new_index)
+    
+    # Find common columns between performance and portfolio_weights
     common_columns = performance.columns.intersection(portfolio_weights.keys())
+    
+    # Find columns that are not common (present in either performance or portfolio_weights but not both)
+    all_performance_columns = set(performance.columns)
+    all_portfolio_columns = set(portfolio_weights.keys())
+    
+    # Get columns that are in performance but not in portfolio_weights and vice versa
+    not_in_common = (all_performance_columns ^ all_portfolio_columns)  # Symmetric difference
+    
+    # Log the columns that are not in common (Optional)
+    # logger.info(f"Columns not in common between performance and portfolio_weights: {not_in_common}")
+    
+    # Calculate performance for common columns
     performance_slice = performance.loc[
-        performance.index == tt.index[-1], common_columns
+        performance.index == current_date, common_columns
     ]
+    
+    portfolio_weights_series = pd.Series(portfolio_weights).loc[common_columns]
+    
+    # Calculate portfolio performance by dot product of performance_slice and portfolio_weights
     performance.loc[
-        performance.index == tt.index[-1], "portfolio"
-    ] = performance_slice.dot(pd.Series(portfolio_weights).loc[common_columns])
-    return performance
+        performance.index == current_date, "portfolio"
+    ] = performance_slice.dot(portfolio_weights_series)
+    
+    # Compute returns as the product of performance slice and portfolio weights
+    returns = performance_slice.dot(portfolio_weights_series)
+    
+    # Return the updated performance DataFrame and returns as a float
+    return performance, returns
+
+
