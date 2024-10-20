@@ -4,47 +4,112 @@ import plotly.graph_objects as go
 import pandas as pd
 import plotly.subplots as sp
 
-def plot_signals(sentiment_signal, momentum_signal, value_signal, selected_column):
+def plot_signals(sentiment_signal, momentum_signal, value_signal, selected_column, regime_signal, color_mapping=None):
     """
-    This function takes in three signals (sentiment, momentum, value) and creates subplots
-    to visualize these signals for a selected asset or column.
+    This function takes in three signals (sentiment, momentum, value) and creates a single plot
+    to visualize these signals for a selected asset or column, with background colors
+    added based on economic regime values.
 
     Parameters:
     sentiment_signal (pd.DataFrame): DataFrame containing sentiment signal values over time.
     momentum_signal (pd.DataFrame): DataFrame containing momentum signal values over time.
     value_signal (pd.DataFrame): DataFrame containing value signal values over time.
     selected_column (str): The name of the column/asset to visualize from each signal DataFrame.
+    regime_signal (pd.Series): Series containing economic regime values over time.
+    color_mapping (dict): A dictionary mapping regime values to colors.
 
     Returns:
     None: Displays the plot in Streamlit.
     """
 
-    # Create subplots for 3 columns
-    fig = sp.make_subplots(rows=1, cols=3, subplot_titles=("Sentiment Signal", "Momentum Signal", "Value Signal"))
+    # Assign default color mapping if None is provided
+    if color_mapping is None:
+        color_mapping = {
+            1: '#FF0000',  # Red
+            2: '#FFA500',  # Orange
+            3: '#0000FF',  # Blue
+            4: '#008000',  # Green
+        }
 
-    # Sentiment signal plot
+    # Create a figure for the combined signals
+    fig = go.Figure()
+
+    # Helper function to add colored background based on economic regimes
+    def add_regime_background(fig, regime_signal, color_mapping):
+        previous_regime = None
+        regime_start = None
+
+        for i in range(len(regime_signal)):
+            current_regime = regime_signal.iloc[i]
+
+            # If the regime changes or it's the first entry
+            if current_regime != previous_regime:
+                if regime_start is not None:
+                    # Mark the regime area for the previous regime
+                    regime_end = regime_signal.index[i]  # Now end at the start of the next regime
+                    color = color_mapping.get(previous_regime, '#000000')  # Use black as default if no mapping
+                    fig.add_shape(
+                        type="rect",
+                        xref="x", yref="paper",
+                        x0=regime_start, x1=regime_end,
+                        y0=0, y1=1,  # This covers from bottom (y0=0) to top (y1=1) of the plot
+                        fillcolor=color,
+                        opacity=0.2,  # Use lighter opacity for background areas
+                        layer="below",  # Ensure that the shaded regions are below the lines
+                        line_width=0,
+                    )
+
+                # Start a new contiguous block
+                regime_start = regime_signal.index[i]
+                previous_regime = current_regime
+
+        # Handle the last contiguous block
+        if regime_start is not None:
+            regime_end = regime_signal.index[-1]
+            color = color_mapping.get(previous_regime, '#000000')
+            fig.add_shape(
+                type="rect",
+                xref="x", yref="paper",
+                x0=regime_start, x1=regime_end,
+                y0=0, y1=1,
+                fillcolor=color,
+                opacity=0.2,
+                layer="below",
+                line_width=0,
+            )
+
+    # Add colored background based on regimes
+    add_regime_background(fig, regime_signal, color_mapping)
+
+    # Plot Sentiment Signal
     fig.add_trace(
-        go.Scatter(x=sentiment_signal.index, y=sentiment_signal[selected_column], mode='lines', name='Sentiment'),
-        row=1, col=1
+        go.Scatter(x=sentiment_signal.index, y=sentiment_signal[selected_column], mode='lines', name='Sentiment', line=dict(color='blue'))
     )
 
-    # Momentum signal plot
+    # Plot Momentum Signal
     fig.add_trace(
-        go.Scatter(x=momentum_signal.index, y=momentum_signal[selected_column], mode='lines', name='Momentum', line=dict(color='green')),
-        row=1, col=2
+        go.Scatter(x=momentum_signal.index, y=momentum_signal[selected_column], mode='lines', name='Momentum', line=dict(color='green'))
     )
 
-    # Value signal plot
+    # Plot Value Signal
     fig.add_trace(
-        go.Scatter(x=value_signal.index, y=value_signal[selected_column], mode='lines', name='Value', line=dict(color='red')),
-        row=1, col=3
+        go.Scatter(x=value_signal.index, y=value_signal[selected_column], mode='lines', name='Value', line=dict(color='red'))
     )
 
     # Update layout
-    fig.update_layout(height=400, width=900, title_text="Signals for Selected Asset", showlegend=False)
+    fig.update_layout(
+        height=600, 
+        width=900, 
+        title_text="Combined Signals for Selected Asset",
+        xaxis_title="Time",
+        yaxis_title="Signal Value",
+        showlegend=True
+    )
 
     # Display the plot in Streamlit
     st.plotly_chart(fig, use_container_width=True)
+
+
 
 import plotly.express as px
 import streamlit as st
@@ -141,7 +206,15 @@ def plot_portfolio_weights(portfolio_weights):
     st.plotly_chart(fig, use_container_width=True)
 
 
-def plot_growth_inflation_line(df):
+def plot_growth_inflation_line(df, color_mapping = None):
+    if color_mapping is None:
+        color_mapping = {
+            1: '#FF0000',  # Red
+            2: '#FFA500',  # Orange
+            3: '#0000FF',  # Blue
+            4: '#008000',  # Green
+        }
+
     # Ensure the required columns exist
     required_columns = ["Growth", "Inflation", "EconomicRegime"]
     missing_columns = [col for col in required_columns if col not in df.columns]
@@ -163,11 +236,6 @@ def plot_growth_inflation_line(df):
     y_min = min(df["Growth"].min(), df["Inflation"].min())
     y_max = max(df["Growth"].max(), df["Inflation"].max())
 
-    # Assign distinct colors for each unique economic regime
-    economic_regimes = df["EconomicRegime"].unique()
-    colors = ['rgba(102, 194, 165, 0.8)', 'rgba(252, 141, 98, 0.8)', 'rgba(141, 160, 203, 0.8)',
-              'rgba(231, 138, 195, 0.8)', 'rgba(166, 216, 84, 0.8)', 'rgba(255, 217, 47, 0.8)']  # Extended as needed
-
     # Track which regimes have been added to the legend
     regimes_in_legend = set()
 
@@ -185,7 +253,7 @@ def plot_growth_inflation_line(df):
                 regime_end = df.index[i]  # Now end at the start of the next regime
 
                 # Add colored background for the previous economic regime
-                color = colors[economic_regimes.tolist().index(previous_regime) % len(colors)]
+                color = color_mapping.get(previous_regime, '#000000')  # Use black as default if no mapping
                 fig.add_shape(
                     type="rect",
                     xref="x", yref="paper",
@@ -216,7 +284,7 @@ def plot_growth_inflation_line(df):
     # Handle the last contiguous block
     if regime_start is not None:
         regime_end = df.index[-1]  # End at the last index of the DataFrame
-        color = colors[economic_regimes.tolist().index(previous_regime) % len(colors)]
+        color = color_mapping.get(previous_regime, '#000000')
         fig.add_shape(
             type="rect",
             xref="x", yref="paper",
@@ -248,23 +316,33 @@ def plot_growth_inflation_line(df):
         legend_title="Metrics",
         yaxis=dict(
             title="Growth and Inflation",
-            range=[-4, 4],  # Set the y-axis range to [-4, y_max]  # Dynamically set the y-axis range based on data
+            range=[-4, 4],  # Set the y-axis range to [-4, y_max]
         )
     )
 
     # Display the plot in Streamlit
     st.plotly_chart(fig, use_container_width=True)
 
-def plot_economic_regime_pie_chart(df):
+
+def plot_economic_regime_pie_chart(df, color_mapping = None):
     """
     Create a pie chart of economic regimes based on the percentage of periods they were active.
     
     Args:
     - df (pd.DataFrame): DataFrame containing the "EconomicRegime" column.
+    - color_mapping (dict): A dictionary that maps economic regimes to their respective colors.
     
     Returns:
     - Pie chart showing the percentage of periods for each economic regime.
     """
+    if color_mapping is None:
+        color_mapping = {
+            1: '#FF0000',  # Red
+            2: '#FFA500',  # Orange
+            3: '#0000FF',  # Blue
+            4: '#008000',  # Green
+        }
+
     # Ensure the required column exists
     if "EconomicRegime" not in df.columns:
         st.error("The DataFrame does not contain the 'EconomicRegime' column.")
@@ -276,24 +354,39 @@ def plot_economic_regime_pie_chart(df):
     # Calculate percentage for each regime
     regime_percentages = (regime_counts / regime_counts.sum()) * 100
 
+    econ_regime_labels = [f'Economic Regime: {reg}' for reg in regime_percentages.index]
+
     # Create the pie chart using Plotly
     fig = go.Figure(data=[go.Pie(
-        labels=regime_percentages.index,  # Economic regime labels
+        labels=econ_regime_labels,  # Economic regime labels
         values=regime_percentages.values,  # Corresponding percentage values
         hoverinfo='label+percent',  # Show label and percentage on hover
         textinfo='label+percent',  # Display label and percentage on the pie chart
-        marker=dict(colors=['#66c2a5', '#fc8d62', '#8da0cb', '#e78ac3', '#a6d854', '#ffd92f'])  # Custom colors
+        marker=dict(colors=[color_mapping.get(regime, '#000000') for regime in regime_percentages.index]),  # Use dynamic colors
+        textposition='inside',  # Position the text inside the pie slices
+        textfont=dict(size=12)  # Set a smaller font size for labels
     )])
 
     # Update the layout of the pie chart
     fig.update_layout(
         title="Economic Regimes by Percentage of Periods",
+        margin=dict(l=0, r=0, t=50, b=50),  # Adjust margins to create more space
+        showlegend=False,  # You can turn off the legend if the labels are self-explanatory
     )
 
     # Display the pie chart in Streamlit
     st.plotly_chart(fig, use_container_width=True)
 
-def plot_metrics_by_economic_regime(df, target_variable):
+def plot_metrics_by_economic_regime(df, target_variable, color_mapping=None):
+    # Assign default color mapping if None is provided
+    if color_mapping is None:
+        color_mapping = {
+            1: '#FF0000',  # Red
+            2: '#FFA500',  # Orange
+            3: '#0000FF',  # Blue
+            4: '#008000',  # Green
+        }
+
     # Drop the specified columns
     columns_to_drop = ["CFNAI", "NGDP1", "CPIAUCSL", "CPI1", "US CPI Urban Consumers YoY NSA", 
                        "ISM Manufacturing PMI SA", "Federal Funds Target Rate - Up", "Growth", "Inflation"]
@@ -347,12 +440,13 @@ def plot_metrics_by_economic_regime(df, target_variable):
     for i, regime in enumerate(regimes):
         regime_data = metric_data.loc[regime]
 
-        # Create the horizontal bar chart using Plotly
+        # Create the horizontal bar chart using Plotly, using the color mapping for each regime
         fig = px.bar(
             regime_data,
             orientation='h',
             labels={'index': 'Metrics', 'value': y_label},
-            title=f'{plot_title}: {regime}'
+            title=f'{plot_title}: {regime}',
+            color_discrete_sequence=[color_mapping.get(regime, '#000000')]  # Default to black if no color found
         )
 
         # Add a non-continuous line (dashed) to represent the mean value
@@ -360,7 +454,7 @@ def plot_metrics_by_economic_regime(df, target_variable):
         fig.add_shape(
             type="line",
             x0=mean_value, x1=mean_value,  # The vertical line is based on the mean value
-            y0=0, y1=len(regime_data)-17,     # Line spans the entire height of the chart
+            y0=0, y1=len(regime_data) - 17,  # Line spans the entire height of the chart
             line=dict(
                 color="Red",
                 width=1,

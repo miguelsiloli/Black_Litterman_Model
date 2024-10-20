@@ -245,3 +245,170 @@ def simulate_portfolio_allocation(
     weights_df = weights_df.div(weights_df.sum(axis=1), axis=0)
 
     return performance, weights_df, tt
+
+
+class PortfolioSimulator:
+    def __init__(self, economic_regime, regime_portfolio, portfolio, asset, 
+                 value_signal, momentum_signal, sentiment_signal, performance, 
+                 start_date, end_date, arima_order=(1, 1, 1), min_weight_bound=0, 
+                 max_weight_bound=0.25, max_volatility=0.25, n_bootstraps=100, 
+                 rebalance_period=6):
+        """
+        Initialize the PortfolioSimulator with required data and configuration.
+        
+        Parameters:
+        - economic_regime: pd.DataFrame
+        - regime_portfolio: pd.DataFrame
+        - portfolio: pd.DataFrame
+        - asset: pd.DataFrame
+        - value_signal: pd.DataFrame
+        - momentum_signal: pd.DataFrame
+        - sentiment_signal: pd.DataFrame
+        - performance: pd.DataFrame
+        - start_date: pd.Timestamp
+        - end_date: pd.Timestamp
+        - arima_order: tuple (default: (1, 1, 1))
+        - min_weight_bound: float (default: 0)
+        - max_weight_bound: float (default: 0.25)
+        - max_volatility: float (default: 0.25)
+        - n_bootstraps: int (default: 100)
+        - rebalance_period: int (default: 6)
+        """
+        self.economic_regime = economic_regime
+        self.regime_portfolio = regime_portfolio
+        self.portfolio = portfolio
+        self.asset = asset
+        self.value_signal = value_signal
+        self.momentum_signal = momentum_signal
+        self.sentiment_signal = sentiment_signal
+        self.performance = performance
+        self.start_date = start_date
+        self.end_date = end_date
+        self.arima_order = arima_order
+        self.min_weight_bound = min_weight_bound
+        self.max_weight_bound = max_weight_bound
+        self.max_volatility = max_volatility
+        self.n_bootstraps = n_bootstraps
+        self.rebalance_period = rebalance_period
+
+        # Perform input sanitization
+        self._sanitize_inputs()
+
+    def _sanitize_inputs(self):
+        """
+        Sanitize and validate the inputs based on the conditions specified.
+        """
+        # Ensure min and max weight bounds are valid
+        assert 0 <= self.min_weight_bound <= self.max_weight_bound < 1, \
+            "min_weight_bound must be > 0 and less than max_weight_bound, which must be < 1"
+        
+        # Ensure rebalance_period is greater than 1
+        assert self.rebalance_period > 1, "rebalance_period must be greater than 1"
+        
+        # Ensure asset DataFrame has at least 5 rows (for 5 assets)
+        assert len(self.asset.columns) > 5, "The asset DataFrame must have more than 5 assets (columns)."
+
+    def _check_internal_consistency(self):
+        """
+        Check for internal consistency in the input data, ensuring that indexes match between 
+        economic_regime, regime_portfolio, portfolio, asset, value_signal, momentum_signal, 
+        sentiment_signal, and performance dataframes.
+        """
+        for df_name, df in zip(['economic_regime', 'regime_portfolio', 'portfolio', 
+                                'asset', 'value_signal', 'momentum_signal', 
+                                'sentiment_signal', 'performance'], 
+                               [self.economic_regime, self.regime_portfolio, self.portfolio, 
+                                self.asset, self.value_signal, self.momentum_signal, 
+                                self.sentiment_signal, self.performance]):
+            if df.index.equals(self.performance.index):
+                continue
+            else:
+                warnings.warn(f"{df_name} does not have the same index as performance. Results may be inconsistent.")
+
+    def simulate_portfolio_allocation(self):
+        """
+        Simulate portfolio allocation over time with periodic rebalancing based on economic regimes
+        and technical signals.
+        
+        Returns:
+        - pd.DataFrame: Updated `performance` DataFrame with portfolio performance metrics after running the simulation.
+        """
+        # Run internal consistency check before starting the simulation
+        self._check_internal_consistency()
+
+        current_date = self.start_date
+        counter = 1
+        last_updated_regime_weights = {}
+        last_updated_weights = {}
+        portfolio_weights_list = []
+        date_list = []
+
+        while current_date <= self.end_date:
+            tt = prepare_current_data(self.economic_regime, current_date)
+
+            if counter % self.rebalance_period == 1:  # Rebalance every `rebalance_period` months
+                # Forecasting raw economic data using ARIMA
+                ariam_forecasting = forecast_economic_signals(tt, arima_order=self.arima_order)
+
+                # Compute growth and inflation signals
+                Growth, Inflation = calculate_growth_inflation(ariam_forecasting)
+
+                # Compute L1 trend filter of growth and inflation signals
+                tt = update_trend_filters(tt, Growth, Inflation, ariam_forecasting)
+
+                # Determine trend directions for Growth and Inflation
+                Growth_direction, Inflation_direction = determine_trend_directions(tt)
+
+                # Determine the economic regime based on trends
+                economic_regime_value = determine_economic_regime(Growth_direction, Inflation_direction)
+                tt["EconomicRegime"].iloc[-1] = economic_regime_value
+
+                # Perform portfolio optimization based on the economic regime
+                regime_weights = perform_portfolio_optimization(
+                    tt, self.asset, 
+                    min_weight_bound=self.min_weight_bound,
+                    max_weight_bound=self.max_weight_bound, 
+                    max_volatility=self.max_volatility, 
+                    n_bootstraps=self.n_bootstraps
+                )
+                last_updated_regime_weights = regime_weights
+
+                # Apply technical signals to adjust portfolio weights
+                portfolio_weights = apply_technical_signals(
+                    regime_weights, current_date, self.asset, self.value_signal, 
+                    self.momentum_signal, self.sentiment_signal
+                )
+                last_updated_weights = portfolio_weights
+
+                # Update portfolio weights based on signals
+                self.portfolio = update_portfolio_weights(self.portfolio, portfolio_weights, current_date)
+
+            else:
+                # Use the last updated weights if not rebalancing
+                regime_weights = last_updated_regime_weights
+                portfolio_weights = last_updated_weights
+
+            # Normalize portfolio weights
+            portfolio_weights = normalize_portfolio_weights(portfolio_weights)
+
+            # Calculate portfolio performance for the current month
+            self.performance, returns = calculate_portfolio_performance(
+                self.performance, tt, portfolio_weights, current_date
+            )
+            logger.info(returns)
+
+            # Append the portfolio weights and the current date to the respective lists
+            portfolio_weights_list.append(portfolio_weights)
+            date_list.append(current_date)
+
+            # Move to the next month
+            current_date += pd.offsets.MonthBegin(1)
+            counter += 1
+
+        # Create DataFrame of portfolio weights over time
+        weights_df = pd.DataFrame(portfolio_weights_list, index=date_list)
+        weights_df = weights_df.div(weights_df.sum(axis=1), axis=0)
+
+        return self.performance, weights_df, tt
+
+
