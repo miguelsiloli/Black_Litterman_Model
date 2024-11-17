@@ -411,4 +411,63 @@ class PortfolioSimulator:
 
         return self.performance, weights_df, tt
 
+    def calculate_latest_optimal_weights(self):
+        """
+        Calculate optimal portfolio weights based on the latest available data,
+        considering the current economic regime and technical signals.
+
+        Returns:
+        - pd.Series: Optimal portfolio weights based on the most recent data.
+        """
+        # Run internal consistency check
+        self._check_internal_consistency()
+
+        # Prepare the current data
+        current_data = prepare_current_data(self.economic_regime, self.end_date)
+
+        # Forecast raw economic data using ARIMA
+        ariam_forecasting = forecast_economic_signals(current_data, arima_order=self.arima_order)
+
+        # Compute growth and inflation signals
+        Growth, Inflation = calculate_growth_inflation(ariam_forecasting)
+
+        # Compute L1 trend filter of growth and inflation signals
+        current_data = update_trend_filters(current_data, Growth, Inflation, ariam_forecasting)
+
+        # Determine trend directions for Growth and Inflation
+        Growth_direction, Inflation_direction = determine_trend_directions(current_data)
+
+        # Determine the economic regime based on trends
+        economic_regime_value = determine_economic_regime(Growth_direction, Inflation_direction)
+        current_data["EconomicRegime"].iloc[-1] = economic_regime_value
+
+        # Perform portfolio optimization based on the current economic regime
+        regime_weights = perform_portfolio_optimization(
+            current_data, self.asset, 
+            min_weight_bound=self.min_weight_bound,
+            max_weight_bound=self.max_weight_bound, 
+            max_volatility=self.max_volatility, 
+            n_bootstraps=self.n_bootstraps
+        )
+
+        # Apply technical signals to adjust portfolio weights
+        optimal_weights = apply_technical_signals(
+            regime_weights, self.end_date, self.asset, 
+            self.value_signal, self.momentum_signal, self.sentiment_signal
+        )
+
+        # Normalize the portfolio weights
+        optimal_weights = normalize_portfolio_weights(optimal_weights)
+
+        # Generate the index for each month between `start_date + 1 month` to `start_date + rebalance_period`
+        date_range = pd.date_range(start=self.start_date + pd.offsets.MonthBegin(1), 
+                                periods=self.rebalance_period, freq='MS')
+
+        # Create a DataFrame by repeating the `last_optimal_weights` for each month in the date range
+        future_weights_df = pd.DataFrame([optimal_weights] * len(date_range), 
+                                index=date_range)
+
+        return future_weights_df
+
+
 

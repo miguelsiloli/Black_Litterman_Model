@@ -141,6 +141,8 @@ with tabs[0]:
             rebalance_period=rebalance_period,  # Rebalancing period (months)
         )
 
+        future_weights_df = port.calculate_latest_optimal_weights()
+
         performance, portfolio_weights, tt = port.simulate_portfolio_allocation()
 
         dmvo_portfolio_weights = portfolio_weights.copy()
@@ -169,3 +171,5 @@ with tabs[0]:
         plot_cumulative_returns(regime_portfolio_cumulative_returns, equal_portfolio_returns, static_portfolio_returns)
 
         plot_portfolio_weights(dmvo_portfolio_weights)
+
+        plot_portfolio_weights(future_weights_df)
