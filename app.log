@@ -5224,3 +5224,2880 @@ dtype: float64
 2024-11-17 20:35:39,714 - my_logger - INFO - Date
 2023-12-01    0.048026
 dtype: float64
+2025-03-25 15:15:34,129 - my_logger - INFO - Date
+2020-01-01    0.01305
+dtype: float64
+2025-03-25 15:15:34,135 - my_logger - INFO - Date
+2020-02-01   -0.067521
+dtype: float64
+2025-03-25 15:15:34,141 - my_logger - INFO - Date
+2020-03-01   -0.094044
+dtype: float64
+2025-03-25 15:15:34,146 - my_logger - INFO - Date
+2020-04-01    0.094866
+dtype: float64
+2025-03-25 15:15:34,154 - my_logger - INFO - Date
+2020-05-01    0.04273
+dtype: float64
+2025-03-25 15:15:34,159 - my_logger - INFO - Date
+2020-06-01    0.03877
+dtype: float64
+2025-03-25 15:15:34,893 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 15:15:34,898 - my_logger - INFO - Date
+2020-08-01    0.049204
+dtype: float64
+2025-03-25 15:15:34,905 - my_logger - INFO - Date
+2020-09-01   -0.036237
+dtype: float64
+2025-03-25 15:15:34,910 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 15:15:34,916 - my_logger - INFO - Date
+2020-11-01    0.097201
+dtype: float64
+2025-03-25 15:15:34,921 - my_logger - INFO - Date
+2020-12-01    0.053929
+dtype: float64
+2025-03-25 15:15:35,651 - my_logger - INFO - Date
+2021-01-01   -0.008161
+dtype: float64
+2025-03-25 15:15:35,656 - my_logger - INFO - Date
+2021-02-01   -0.007838
+dtype: float64
+2025-03-25 15:15:35,663 - my_logger - INFO - Date
+2021-03-01    0.019454
+dtype: float64
+2025-03-25 15:15:35,669 - my_logger - INFO - Date
+2021-04-01    0.039314
+dtype: float64
+2025-03-25 15:15:35,674 - my_logger - INFO - Date
+2021-05-01    0.007028
+dtype: float64
+2025-03-25 15:15:35,680 - my_logger - INFO - Date
+2021-06-01    0.034584
+dtype: float64
+2025-03-25 15:15:36,414 - my_logger - INFO - Date
+2021-07-01    0.014822
+dtype: float64
+2025-03-25 15:15:36,419 - my_logger - INFO - Date
+2021-08-01    0.019486
+dtype: float64
+2025-03-25 15:15:36,426 - my_logger - INFO - Date
+2021-09-01   -0.036078
+dtype: float64
+2025-03-25 15:15:36,432 - my_logger - INFO - Date
+2021-10-01    0.061038
+dtype: float64
+2025-03-25 15:15:36,443 - my_logger - INFO - Date
+2021-11-01   -0.021747
+dtype: float64
+2025-03-25 15:15:36,455 - my_logger - INFO - Date
+2021-12-01    0.043863
+dtype: float64
+2025-03-25 15:15:37,193 - my_logger - INFO - Date
+2022-01-01   -0.029849
+dtype: float64
+2025-03-25 15:15:37,198 - my_logger - INFO - Date
+2022-02-01   -0.014975
+dtype: float64
+2025-03-25 15:15:37,205 - my_logger - INFO - Date
+2022-03-01    0.036417
+dtype: float64
+2025-03-25 15:15:37,210 - my_logger - INFO - Date
+2022-04-01   -0.075301
+dtype: float64
+2025-03-25 15:15:37,217 - my_logger - INFO - Date
+2022-05-01    0.011699
+dtype: float64
+2025-03-25 15:15:37,223 - my_logger - INFO - Date
+2022-06-01   -0.099426
+dtype: float64
+2025-03-25 15:15:37,960 - my_logger - INFO - Date
+2022-07-01    0.068286
+dtype: float64
+2025-03-25 15:15:37,966 - my_logger - INFO - Date
+2022-08-01   -0.040525
+dtype: float64
+2025-03-25 15:15:37,973 - my_logger - INFO - Date
+2022-09-01   -0.088617
+dtype: float64
+2025-03-25 15:15:37,979 - my_logger - INFO - Date
+2022-10-01    0.050174
+dtype: float64
+2025-03-25 15:15:37,985 - my_logger - INFO - Date
+2022-11-01    0.068231
+dtype: float64
+2025-03-25 15:15:37,991 - my_logger - INFO - Date
+2022-12-01   -0.037614
+dtype: float64
+2025-03-25 15:15:38,722 - my_logger - INFO - Date
+2023-01-01    0.059477
+dtype: float64
+2025-03-25 15:15:38,728 - my_logger - INFO - Date
+2023-02-01   -0.035036
+dtype: float64
+2025-03-25 15:15:38,735 - my_logger - INFO - Date
+2023-03-01    0.014003
+dtype: float64
+2025-03-25 15:15:38,741 - my_logger - INFO - Date
+2023-04-01    0.003917
+dtype: float64
+2025-03-25 15:15:38,746 - my_logger - INFO - Date
+2023-05-01   -0.031932
+dtype: float64
+2025-03-25 15:15:38,753 - my_logger - INFO - Date
+2023-06-01    0.03502
+dtype: float64
+2025-03-25 15:15:39,503 - my_logger - INFO - Date
+2023-07-01    0.03166
+dtype: float64
+2025-03-25 15:15:39,509 - my_logger - INFO - Date
+2023-08-01   -0.025958
+dtype: float64
+2025-03-25 15:15:39,515 - my_logger - INFO - Date
+2023-09-01   -0.028219
+dtype: float64
+2025-03-25 15:15:39,521 - my_logger - INFO - Date
+2023-10-01   -0.02498
+dtype: float64
+2025-03-25 15:15:39,527 - my_logger - INFO - Date
+2023-11-01    0.069004
+dtype: float64
+2025-03-25 15:15:39,532 - my_logger - INFO - Date
+2023-12-01    0.04878
+dtype: float64
+2025-03-25 16:14:45,639 - yfinance - ERROR - 
+1 Failed download:
+2025-03-25 16:14:45,639 - yfinance - ERROR - ['APPL']: YFPricesMissingError('possibly delisted; no price data found  (1d 1990-01-01 -> 2025-03-25)')
+2025-03-25 16:22:54,248 - my_logger - INFO - Date
+2020-01-01    0.010866
+dtype: float64
+2025-03-25 16:22:54,253 - my_logger - INFO - Date
+2020-02-01   -0.058758
+dtype: float64
+2025-03-25 16:22:54,259 - my_logger - INFO - Date
+2020-03-01   -0.086501
+dtype: float64
+2025-03-25 16:22:54,264 - my_logger - INFO - Date
+2020-04-01    0.096329
+dtype: float64
+2025-03-25 16:22:54,270 - my_logger - INFO - Date
+2020-05-01    0.042514
+dtype: float64
+2025-03-25 16:22:54,276 - my_logger - INFO - Date
+2020-06-01    0.039823
+dtype: float64
+2025-03-25 16:22:55,081 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 16:22:55,087 - my_logger - INFO - Date
+2020-08-01    0.049204
+dtype: float64
+2025-03-25 16:22:55,093 - my_logger - INFO - Date
+2020-09-01   -0.036237
+dtype: float64
+2025-03-25 16:22:55,098 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 16:22:55,105 - my_logger - INFO - Date
+2020-11-01    0.097201
+dtype: float64
+2025-03-25 16:22:55,110 - my_logger - INFO - Date
+2020-12-01    0.053929
+dtype: float64
+2025-03-25 16:22:55,846 - my_logger - INFO - Date
+2021-01-01   -0.011547
+dtype: float64
+2025-03-25 16:22:55,854 - my_logger - INFO - Date
+2021-02-01   -0.010444
+dtype: float64
+2025-03-25 16:22:55,861 - my_logger - INFO - Date
+2021-03-01    0.019536
+dtype: float64
+2025-03-25 16:22:55,867 - my_logger - INFO - Date
+2021-04-01    0.035694
+dtype: float64
+2025-03-25 16:22:55,874 - my_logger - INFO - Date
+2021-05-01    0.00777
+dtype: float64
+2025-03-25 16:22:55,879 - my_logger - INFO - Date
+2021-06-01    0.03193
+dtype: float64
+2025-03-25 16:22:56,628 - my_logger - INFO - Date
+2021-07-01    0.019879
+dtype: float64
+2025-03-25 16:22:56,634 - my_logger - INFO - Date
+2021-08-01    0.020397
+dtype: float64
+2025-03-25 16:22:56,641 - my_logger - INFO - Date
+2021-09-01   -0.044594
+dtype: float64
+2025-03-25 16:22:56,649 - my_logger - INFO - Date
+2021-10-01    0.063247
+dtype: float64
+2025-03-25 16:22:56,658 - my_logger - INFO - Date
+2021-11-01   -0.009286
+dtype: float64
+2025-03-25 16:22:56,666 - my_logger - INFO - Date
+2021-12-01    0.038169
+dtype: float64
+2025-03-25 16:22:57,491 - my_logger - INFO - Date
+2022-01-01   -0.02892
+dtype: float64
+2025-03-25 16:22:57,498 - my_logger - INFO - Date
+2022-02-01   -0.021497
+dtype: float64
+2025-03-25 16:22:57,506 - my_logger - INFO - Date
+2022-03-01    0.029297
+dtype: float64
+2025-03-25 16:22:57,513 - my_logger - INFO - Date
+2022-04-01   -0.081545
+dtype: float64
+2025-03-25 16:22:57,519 - my_logger - INFO - Date
+2022-05-01    0.005365
+dtype: float64
+2025-03-25 16:22:57,527 - my_logger - INFO - Date
+2022-06-01   -0.100972
+dtype: float64
+2025-03-25 16:22:58,345 - my_logger - INFO - Date
+2022-07-01    0.077549
+dtype: float64
+2025-03-25 16:22:58,354 - my_logger - INFO - Date
+2022-08-01   -0.044708
+dtype: float64
+2025-03-25 16:22:58,360 - my_logger - INFO - Date
+2022-09-01   -0.09024
+dtype: float64
+2025-03-25 16:22:58,366 - my_logger - INFO - Date
+2022-10-01    0.055969
+dtype: float64
+2025-03-25 16:22:58,373 - my_logger - INFO - Date
+2022-11-01    0.063232
+dtype: float64
+2025-03-25 16:22:58,379 - my_logger - INFO - Date
+2022-12-01   -0.043857
+dtype: float64
+2025-03-25 16:22:59,157 - my_logger - INFO - Date
+2023-01-01    0.065847
+dtype: float64
+2025-03-25 16:22:59,163 - my_logger - INFO - Date
+2023-02-01   -0.03366
+dtype: float64
+2025-03-25 16:22:59,169 - my_logger - INFO - Date
+2023-03-01    0.016163
+dtype: float64
+2025-03-25 16:22:59,175 - my_logger - INFO - Date
+2023-04-01    0.002933
+dtype: float64
+2025-03-25 16:22:59,181 - my_logger - INFO - Date
+2023-05-01   -0.022794
+dtype: float64
+2025-03-25 16:22:59,187 - my_logger - INFO - Date
+2023-06-01    0.034552
+dtype: float64
+2025-03-25 16:22:59,977 - my_logger - INFO - Date
+2023-07-01    0.02967
+dtype: float64
+2025-03-25 16:22:59,984 - my_logger - INFO - Date
+2023-08-01   -0.02283
+dtype: float64
+2025-03-25 16:22:59,990 - my_logger - INFO - Date
+2023-09-01   -0.026558
+dtype: float64
+2025-03-25 16:22:59,996 - my_logger - INFO - Date
+2023-10-01   -0.024092
+dtype: float64
+2025-03-25 16:23:00,002 - my_logger - INFO - Date
+2023-11-01    0.064051
+dtype: float64
+2025-03-25 16:23:00,008 - my_logger - INFO - Date
+2023-12-01    0.045319
+dtype: float64
+2025-03-25 17:13:45,531 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:13:45,539 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:13:45,544 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:13:45,549 - my_logger - INFO - Date
+2020-04-01   -0.05394
+dtype: float64
+2025-03-25 17:13:45,554 - my_logger - INFO - Date
+2020-05-01    0.04311
+dtype: float64
+2025-03-25 17:13:45,560 - my_logger - INFO - Date
+2020-06-01    0.021199
+dtype: float64
+2025-03-25 17:13:46,435 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 17:13:46,441 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:13:46,446 - my_logger - INFO - Date
+2020-09-01    0.01066
+dtype: float64
+2025-03-25 17:13:46,452 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 17:13:46,458 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:13:46,463 - my_logger - INFO - Date
+2020-12-01    0.156282
+dtype: float64
+2025-03-25 17:13:47,260 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:13:47,266 - my_logger - INFO - Date
+2021-02-01    0.014285
+dtype: float64
+2025-03-25 17:13:47,272 - my_logger - INFO - Date
+2021-03-01    0.014243
+dtype: float64
+2025-03-25 17:13:47,279 - my_logger - INFO - Date
+2021-04-01    0.029329
+dtype: float64
+2025-03-25 17:13:47,285 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:13:47,290 - my_logger - INFO - Date
+2021-06-01    0.044534
+dtype: float64
+2025-03-25 17:13:47,953 - my_logger - INFO - Date
+2021-07-01    0.040417
+dtype: float64
+2025-03-25 17:13:47,959 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:13:47,965 - my_logger - INFO - Date
+2021-09-01    0.021274
+dtype: float64
+2025-03-25 17:13:47,971 - my_logger - INFO - Date
+2021-10-01    0.005258
+dtype: float64
+2025-03-25 17:13:47,978 - my_logger - INFO - Date
+2021-11-01    0.046902
+dtype: float64
+2025-03-25 17:13:47,986 - my_logger - INFO - Date
+2021-12-01    0.033625
+dtype: float64
+2025-03-25 17:13:48,739 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:13:48,744 - my_logger - INFO - Date
+2022-02-01   -0.086333
+dtype: float64
+2025-03-25 17:13:48,750 - my_logger - INFO - Date
+2022-03-01    0.005549
+dtype: float64
+2025-03-25 17:13:48,756 - my_logger - INFO - Date
+2022-04-01   -0.045745
+dtype: float64
+2025-03-25 17:13:48,764 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:13:48,770 - my_logger - INFO - Date
+2022-06-01   -0.081255
+dtype: float64
+2025-03-25 17:13:49,625 - my_logger - INFO - Date
+2022-07-01    0.021988
+dtype: float64
+2025-03-25 17:13:49,631 - my_logger - INFO - Date
+2022-08-01   -0.00607
+dtype: float64
+2025-03-25 17:13:49,640 - my_logger - INFO - Date
+2022-09-01   -0.071714
+dtype: float64
+2025-03-25 17:13:49,649 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:13:49,654 - my_logger - INFO - Date
+2022-11-01    0.053179
+dtype: float64
+2025-03-25 17:13:49,662 - my_logger - INFO - Date
+2022-12-01    0.003432
+dtype: float64
+2025-03-25 17:13:50,565 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:13:50,571 - my_logger - INFO - Date
+2023-02-01    0.037015
+dtype: float64
+2025-03-25 17:13:50,578 - my_logger - INFO - Date
+2023-03-01    0.030172
+dtype: float64
+2025-03-25 17:13:50,583 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:13:50,589 - my_logger - INFO - Date
+2023-05-01   -0.009105
+dtype: float64
+2025-03-25 17:13:50,596 - my_logger - INFO - Date
+2023-06-01    0.04117
+dtype: float64
+2025-03-25 17:13:51,355 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:13:51,361 - my_logger - INFO - Date
+2023-08-01    0.007288
+dtype: float64
+2025-03-25 17:13:51,366 - my_logger - INFO - Date
+2023-09-01   -0.03116
+dtype: float64
+2025-03-25 17:13:51,372 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:13:51,378 - my_logger - INFO - Date
+2023-11-01    0.045035
+dtype: float64
+2025-03-25 17:13:51,385 - my_logger - INFO - Date
+2023-12-01    0.057392
+dtype: float64
+2025-03-25 17:16:14,137 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:16:14,142 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:16:14,148 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:16:14,153 - my_logger - INFO - Date
+2020-04-01   -0.051155
+dtype: float64
+2025-03-25 17:16:14,159 - my_logger - INFO - Date
+2020-05-01    0.042878
+dtype: float64
+2025-03-25 17:16:14,165 - my_logger - INFO - Date
+2020-06-01    0.021502
+dtype: float64
+2025-03-25 17:16:15,025 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 17:16:15,033 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:16:15,038 - my_logger - INFO - Date
+2020-09-01    0.01066
+dtype: float64
+2025-03-25 17:16:15,044 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 17:16:15,050 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:16:15,055 - my_logger - INFO - Date
+2020-12-01    0.156282
+dtype: float64
+2025-03-25 17:16:15,826 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:16:15,831 - my_logger - INFO - Date
+2021-02-01    0.012231
+dtype: float64
+2025-03-25 17:16:15,837 - my_logger - INFO - Date
+2021-03-01    0.013063
+dtype: float64
+2025-03-25 17:16:15,843 - my_logger - INFO - Date
+2021-04-01    0.026965
+dtype: float64
+2025-03-25 17:16:15,848 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:16:15,854 - my_logger - INFO - Date
+2021-06-01    0.044418
+dtype: float64
+2025-03-25 17:16:16,494 - my_logger - INFO - Date
+2021-07-01    0.043191
+dtype: float64
+2025-03-25 17:16:16,500 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:16:16,505 - my_logger - INFO - Date
+2021-09-01    0.028432
+dtype: float64
+2025-03-25 17:16:16,512 - my_logger - INFO - Date
+2021-10-01    0.006137
+dtype: float64
+2025-03-25 17:16:16,518 - my_logger - INFO - Date
+2021-11-01    0.05865
+dtype: float64
+2025-03-25 17:16:16,523 - my_logger - INFO - Date
+2021-12-01    0.030787
+dtype: float64
+2025-03-25 17:16:17,158 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:16:17,163 - my_logger - INFO - Date
+2022-02-01   -0.082562
+dtype: float64
+2025-03-25 17:16:17,169 - my_logger - INFO - Date
+2022-03-01    0.006678
+dtype: float64
+2025-03-25 17:16:17,174 - my_logger - INFO - Date
+2022-04-01   -0.039869
+dtype: float64
+2025-03-25 17:16:17,180 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:16:17,185 - my_logger - INFO - Date
+2022-06-01   -0.075867
+dtype: float64
+2025-03-25 17:16:17,921 - my_logger - INFO - Date
+2022-07-01    0.012614
+dtype: float64
+2025-03-25 17:16:17,926 - my_logger - INFO - Date
+2022-08-01   -0.001727
+dtype: float64
+2025-03-25 17:16:17,934 - my_logger - INFO - Date
+2022-09-01   -0.071493
+dtype: float64
+2025-03-25 17:16:17,940 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:16:17,946 - my_logger - INFO - Date
+2022-11-01    0.048475
+dtype: float64
+2025-03-25 17:16:17,951 - my_logger - INFO - Date
+2022-12-01    0.010572
+dtype: float64
+2025-03-25 17:16:18,646 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:16:18,652 - my_logger - INFO - Date
+2023-02-01    0.034816
+dtype: float64
+2025-03-25 17:16:18,659 - my_logger - INFO - Date
+2023-03-01    0.028257
+dtype: float64
+2025-03-25 17:16:18,665 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:16:18,671 - my_logger - INFO - Date
+2023-05-01    0.000597
+dtype: float64
+2025-03-25 17:16:18,678 - my_logger - INFO - Date
+2023-06-01    0.045201
+dtype: float64
+2025-03-25 17:16:19,369 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:16:19,374 - my_logger - INFO - Date
+2023-08-01    0.006458
+dtype: float64
+2025-03-25 17:16:19,380 - my_logger - INFO - Date
+2023-09-01   -0.030089
+dtype: float64
+2025-03-25 17:16:19,386 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:16:19,391 - my_logger - INFO - Date
+2023-11-01    0.045081
+dtype: float64
+2025-03-25 17:16:19,398 - my_logger - INFO - Date
+2023-12-01    0.056776
+dtype: float64
+2025-03-25 17:22:50,366 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:22:50,371 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:22:50,377 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:22:50,383 - my_logger - INFO - Date
+2020-04-01   -0.0532
+dtype: float64
+2025-03-25 17:22:50,388 - my_logger - INFO - Date
+2020-05-01    0.045909
+dtype: float64
+2025-03-25 17:22:50,394 - my_logger - INFO - Date
+2020-06-01    0.023002
+dtype: float64
+2025-03-25 17:22:51,270 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 17:22:51,276 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:22:51,283 - my_logger - INFO - Date
+2020-09-01    0.01066
+dtype: float64
+2025-03-25 17:22:51,290 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 17:22:51,298 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:22:51,304 - my_logger - INFO - Date
+2020-12-01    0.156282
+dtype: float64
+2025-03-25 17:22:52,133 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:22:52,139 - my_logger - INFO - Date
+2021-02-01    0.010897
+dtype: float64
+2025-03-25 17:22:52,146 - my_logger - INFO - Date
+2021-03-01    0.014746
+dtype: float64
+2025-03-25 17:22:52,152 - my_logger - INFO - Date
+2021-04-01    0.032534
+dtype: float64
+2025-03-25 17:22:52,158 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:22:52,164 - my_logger - INFO - Date
+2021-06-01    0.045767
+dtype: float64
+2025-03-25 17:22:52,925 - my_logger - INFO - Date
+2021-07-01    0.042594
+dtype: float64
+2025-03-25 17:22:52,931 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:22:52,937 - my_logger - INFO - Date
+2021-09-01    0.028757
+dtype: float64
+2025-03-25 17:22:52,943 - my_logger - INFO - Date
+2021-10-01    0.00395
+dtype: float64
+2025-03-25 17:22:52,950 - my_logger - INFO - Date
+2021-11-01    0.059935
+dtype: float64
+2025-03-25 17:22:52,955 - my_logger - INFO - Date
+2021-12-01    0.028848
+dtype: float64
+2025-03-25 17:22:53,628 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:22:53,633 - my_logger - INFO - Date
+2022-02-01   -0.088443
+dtype: float64
+2025-03-25 17:22:53,639 - my_logger - INFO - Date
+2022-03-01    0.011564
+dtype: float64
+2025-03-25 17:22:53,645 - my_logger - INFO - Date
+2022-04-01   -0.042312
+dtype: float64
+2025-03-25 17:22:53,651 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:22:53,656 - my_logger - INFO - Date
+2022-06-01   -0.077917
+dtype: float64
+2025-03-25 17:22:54,454 - my_logger - INFO - Date
+2022-07-01    0.003077
+dtype: float64
+2025-03-25 17:22:54,460 - my_logger - INFO - Date
+2022-08-01    0.004737
+dtype: float64
+2025-03-25 17:22:54,466 - my_logger - INFO - Date
+2022-09-01   -0.06655
+dtype: float64
+2025-03-25 17:22:54,472 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:22:54,478 - my_logger - INFO - Date
+2022-11-01    0.036697
+dtype: float64
+2025-03-25 17:22:54,484 - my_logger - INFO - Date
+2022-12-01    0.017897
+dtype: float64
+2025-03-25 17:22:55,207 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:22:55,215 - my_logger - INFO - Date
+2023-02-01    0.035383
+dtype: float64
+2025-03-25 17:22:55,221 - my_logger - INFO - Date
+2023-03-01    0.026256
+dtype: float64
+2025-03-25 17:22:55,227 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:22:55,233 - my_logger - INFO - Date
+2023-05-01   -0.005018
+dtype: float64
+2025-03-25 17:22:55,239 - my_logger - INFO - Date
+2023-06-01    0.041773
+dtype: float64
+2025-03-25 17:22:55,970 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:22:55,975 - my_logger - INFO - Date
+2023-08-01    0.009365
+dtype: float64
+2025-03-25 17:22:55,983 - my_logger - INFO - Date
+2023-09-01   -0.030374
+dtype: float64
+2025-03-25 17:22:55,990 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:22:55,997 - my_logger - INFO - Date
+2023-11-01    0.044223
+dtype: float64
+2025-03-25 17:22:56,003 - my_logger - INFO - Date
+2023-12-01    0.059484
+dtype: float64
+2025-03-25 17:23:43,210 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:23:43,215 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:23:43,221 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:23:43,227 - my_logger - INFO - Date
+2020-04-01   -0.055183
+dtype: float64
+2025-03-25 17:23:43,232 - my_logger - INFO - Date
+2020-05-01    0.042273
+dtype: float64
+2025-03-25 17:23:43,238 - my_logger - INFO - Date
+2020-06-01    0.022788
+dtype: float64
+2025-03-25 17:23:44,110 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 17:23:44,117 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:23:44,123 - my_logger - INFO - Date
+2020-09-01    0.01066
+dtype: float64
+2025-03-25 17:23:44,130 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 17:23:44,136 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:23:44,143 - my_logger - INFO - Date
+2020-12-01    0.156282
+dtype: float64
+2025-03-25 17:23:45,007 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:23:45,013 - my_logger - INFO - Date
+2021-02-01    0.007207
+dtype: float64
+2025-03-25 17:23:45,019 - my_logger - INFO - Date
+2021-03-01    0.019514
+dtype: float64
+2025-03-25 17:23:45,027 - my_logger - INFO - Date
+2021-04-01    0.030334
+dtype: float64
+2025-03-25 17:23:45,034 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:23:45,039 - my_logger - INFO - Date
+2021-06-01    0.043905
+dtype: float64
+2025-03-25 17:23:45,815 - my_logger - INFO - Date
+2021-07-01    0.04315
+dtype: float64
+2025-03-25 17:23:45,821 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:23:45,826 - my_logger - INFO - Date
+2021-09-01    0.031932
+dtype: float64
+2025-03-25 17:23:45,832 - my_logger - INFO - Date
+2021-10-01   -0.001755
+dtype: float64
+2025-03-25 17:23:45,838 - my_logger - INFO - Date
+2021-11-01    0.057851
+dtype: float64
+2025-03-25 17:23:45,844 - my_logger - INFO - Date
+2021-12-01    0.032666
+dtype: float64
+2025-03-25 17:23:46,570 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:23:46,576 - my_logger - INFO - Date
+2022-02-01   -0.080459
+dtype: float64
+2025-03-25 17:23:46,582 - my_logger - INFO - Date
+2022-03-01    0.008169
+dtype: float64
+2025-03-25 17:23:46,588 - my_logger - INFO - Date
+2022-04-01   -0.036886
+dtype: float64
+2025-03-25 17:23:46,596 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:23:46,602 - my_logger - INFO - Date
+2022-06-01   -0.075047
+dtype: float64
+2025-03-25 17:23:47,403 - my_logger - INFO - Date
+2022-07-01    0.007602
+dtype: float64
+2025-03-25 17:23:47,409 - my_logger - INFO - Date
+2022-08-01    0.001028
+dtype: float64
+2025-03-25 17:23:47,416 - my_logger - INFO - Date
+2022-09-01   -0.067738
+dtype: float64
+2025-03-25 17:23:47,423 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:23:47,430 - my_logger - INFO - Date
+2022-11-01    0.041489
+dtype: float64
+2025-03-25 17:23:47,435 - my_logger - INFO - Date
+2022-12-01    0.014131
+dtype: float64
+2025-03-25 17:23:48,148 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:23:48,154 - my_logger - INFO - Date
+2023-02-01    0.029714
+dtype: float64
+2025-03-25 17:23:48,160 - my_logger - INFO - Date
+2023-03-01    0.027004
+dtype: float64
+2025-03-25 17:23:48,166 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:23:48,172 - my_logger - INFO - Date
+2023-05-01   -0.007712
+dtype: float64
+2025-03-25 17:23:48,179 - my_logger - INFO - Date
+2023-06-01    0.038314
+dtype: float64
+2025-03-25 17:23:48,898 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:23:48,904 - my_logger - INFO - Date
+2023-08-01    0.006971
+dtype: float64
+2025-03-25 17:23:48,911 - my_logger - INFO - Date
+2023-09-01   -0.02908
+dtype: float64
+2025-03-25 17:23:48,917 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:23:48,922 - my_logger - INFO - Date
+2023-11-01    0.042864
+dtype: float64
+2025-03-25 17:23:48,929 - my_logger - INFO - Date
+2023-12-01    0.05141
+dtype: float64
+2025-03-25 17:34:57,537 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:34:57,543 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:34:57,549 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:34:57,554 - my_logger - INFO - Date
+2020-04-01   -0.05315
+dtype: float64
+2025-03-25 17:34:57,560 - my_logger - INFO - Date
+2020-05-01    0.038918
+dtype: float64
+2025-03-25 17:34:57,566 - my_logger - INFO - Date
+2020-06-01    0.020915
+dtype: float64
+2025-03-25 17:34:58,381 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 17:34:58,387 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:34:58,393 - my_logger - INFO - Date
+2020-09-01    0.01066
+dtype: float64
+2025-03-25 17:34:58,398 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 17:34:58,404 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:34:58,410 - my_logger - INFO - Date
+2020-12-01    0.156282
+dtype: float64
+2025-03-25 17:34:59,190 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:34:59,195 - my_logger - INFO - Date
+2021-02-01    0.010684
+dtype: float64
+2025-03-25 17:34:59,201 - my_logger - INFO - Date
+2021-03-01    0.014456
+dtype: float64
+2025-03-25 17:34:59,206 - my_logger - INFO - Date
+2021-04-01    0.031127
+dtype: float64
+2025-03-25 17:34:59,212 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:34:59,218 - my_logger - INFO - Date
+2021-06-01    0.045004
+dtype: float64
+2025-03-25 17:34:59,872 - my_logger - INFO - Date
+2021-07-01    0.042351
+dtype: float64
+2025-03-25 17:34:59,877 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:34:59,883 - my_logger - INFO - Date
+2021-09-01    0.022932
+dtype: float64
+2025-03-25 17:34:59,889 - my_logger - INFO - Date
+2021-10-01    0.007881
+dtype: float64
+2025-03-25 17:34:59,894 - my_logger - INFO - Date
+2021-11-01    0.048581
+dtype: float64
+2025-03-25 17:34:59,900 - my_logger - INFO - Date
+2021-12-01    0.035064
+dtype: float64
+2025-03-25 17:35:00,537 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:35:00,542 - my_logger - INFO - Date
+2022-02-01   -0.079384
+dtype: float64
+2025-03-25 17:35:00,547 - my_logger - INFO - Date
+2022-03-01    0.006012
+dtype: float64
+2025-03-25 17:35:00,553 - my_logger - INFO - Date
+2022-04-01   -0.039374
+dtype: float64
+2025-03-25 17:35:00,559 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:35:00,564 - my_logger - INFO - Date
+2022-06-01   -0.079252
+dtype: float64
+2025-03-25 17:35:01,359 - my_logger - INFO - Date
+2022-07-01    0.01957
+dtype: float64
+2025-03-25 17:35:01,365 - my_logger - INFO - Date
+2022-08-01   -0.008861
+dtype: float64
+2025-03-25 17:35:01,371 - my_logger - INFO - Date
+2022-09-01   -0.070247
+dtype: float64
+2025-03-25 17:35:01,376 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:35:01,384 - my_logger - INFO - Date
+2022-11-01    0.058508
+dtype: float64
+2025-03-25 17:35:01,395 - my_logger - INFO - Date
+2022-12-01    0.004137
+dtype: float64
+2025-03-25 17:35:02,120 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:35:02,125 - my_logger - INFO - Date
+2023-02-01    0.042404
+dtype: float64
+2025-03-25 17:35:02,131 - my_logger - INFO - Date
+2023-03-01    0.030249
+dtype: float64
+2025-03-25 17:35:02,137 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:35:02,143 - my_logger - INFO - Date
+2023-05-01   -0.00645
+dtype: float64
+2025-03-25 17:35:02,148 - my_logger - INFO - Date
+2023-06-01    0.047559
+dtype: float64
+2025-03-25 17:35:02,852 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:35:02,857 - my_logger - INFO - Date
+2023-08-01    0.005233
+dtype: float64
+2025-03-25 17:35:02,863 - my_logger - INFO - Date
+2023-09-01   -0.034101
+dtype: float64
+2025-03-25 17:35:02,869 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:35:02,875 - my_logger - INFO - Date
+2023-11-01    0.049241
+dtype: float64
+2025-03-25 17:35:02,880 - my_logger - INFO - Date
+2023-12-01    0.053629
+dtype: float64
+2025-03-25 17:37:40,366 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:37:40,371 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:37:40,377 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:37:40,382 - my_logger - INFO - Date
+2020-04-01   -0.045696
+dtype: float64
+2025-03-25 17:37:40,388 - my_logger - INFO - Date
+2020-05-01    0.045702
+dtype: float64
+2025-03-25 17:37:40,396 - my_logger - INFO - Date
+2020-06-01    0.019813
+dtype: float64
+2025-03-25 17:37:41,235 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 17:37:41,240 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:37:41,245 - my_logger - INFO - Date
+2020-09-01    0.01066
+dtype: float64
+2025-03-25 17:37:41,251 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 17:37:41,256 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:37:41,262 - my_logger - INFO - Date
+2020-12-01    0.156282
+dtype: float64
+2025-03-25 17:37:42,070 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:37:42,075 - my_logger - INFO - Date
+2021-02-01    0.009965
+dtype: float64
+2025-03-25 17:37:42,081 - my_logger - INFO - Date
+2021-03-01    0.016926
+dtype: float64
+2025-03-25 17:37:42,087 - my_logger - INFO - Date
+2021-04-01    0.03148
+dtype: float64
+2025-03-25 17:37:42,094 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:37:42,099 - my_logger - INFO - Date
+2021-06-01    0.047011
+dtype: float64
+2025-03-25 17:37:42,847 - my_logger - INFO - Date
+2021-07-01    0.040424
+dtype: float64
+2025-03-25 17:37:42,854 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:37:42,861 - my_logger - INFO - Date
+2021-09-01    0.019478
+dtype: float64
+2025-03-25 17:37:42,866 - my_logger - INFO - Date
+2021-10-01    0.010974
+dtype: float64
+2025-03-25 17:37:42,872 - my_logger - INFO - Date
+2021-11-01    0.044207
+dtype: float64
+2025-03-25 17:37:42,879 - my_logger - INFO - Date
+2021-12-01    0.034277
+dtype: float64
+2025-03-25 17:37:43,533 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:37:43,538 - my_logger - INFO - Date
+2022-02-01   -0.073036
+dtype: float64
+2025-03-25 17:37:43,544 - my_logger - INFO - Date
+2022-03-01    0.002127
+dtype: float64
+2025-03-25 17:37:43,549 - my_logger - INFO - Date
+2022-04-01   -0.026523
+dtype: float64
+2025-03-25 17:37:43,555 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:37:43,560 - my_logger - INFO - Date
+2022-06-01   -0.07206
+dtype: float64
+2025-03-25 17:37:44,294 - my_logger - INFO - Date
+2022-07-01    0.013612
+dtype: float64
+2025-03-25 17:37:44,299 - my_logger - INFO - Date
+2022-08-01   -0.008417
+dtype: float64
+2025-03-25 17:37:44,305 - my_logger - INFO - Date
+2022-09-01   -0.064585
+dtype: float64
+2025-03-25 17:37:44,311 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:37:44,317 - my_logger - INFO - Date
+2022-11-01    0.057791
+dtype: float64
+2025-03-25 17:37:44,323 - my_logger - INFO - Date
+2022-12-01    0.008887
+dtype: float64
+2025-03-25 17:37:45,049 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:37:45,055 - my_logger - INFO - Date
+2023-02-01    0.0295
+dtype: float64
+2025-03-25 17:37:45,061 - my_logger - INFO - Date
+2023-03-01    0.02927
+dtype: float64
+2025-03-25 17:37:45,067 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:37:45,075 - my_logger - INFO - Date
+2023-05-01    0.008653
+dtype: float64
+2025-03-25 17:37:45,081 - my_logger - INFO - Date
+2023-06-01    0.039194
+dtype: float64
+2025-03-25 17:37:45,801 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:37:45,806 - my_logger - INFO - Date
+2023-08-01    0.005824
+dtype: float64
+2025-03-25 17:37:45,812 - my_logger - INFO - Date
+2023-09-01   -0.032323
+dtype: float64
+2025-03-25 17:37:45,818 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:37:45,823 - my_logger - INFO - Date
+2023-11-01    0.046694
+dtype: float64
+2025-03-25 17:37:45,829 - my_logger - INFO - Date
+2023-12-01    0.052348
+dtype: float64
+2025-03-25 17:38:42,648 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:38:42,653 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:38:42,659 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:38:42,665 - my_logger - INFO - Date
+2020-04-01   -0.04834
+dtype: float64
+2025-03-25 17:38:42,670 - my_logger - INFO - Date
+2020-05-01    0.042968
+dtype: float64
+2025-03-25 17:38:42,676 - my_logger - INFO - Date
+2020-06-01    0.023633
+dtype: float64
+2025-03-25 17:38:43,503 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 17:38:43,509 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:38:43,514 - my_logger - INFO - Date
+2020-09-01    0.01066
+dtype: float64
+2025-03-25 17:38:43,520 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 17:38:43,526 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:38:43,531 - my_logger - INFO - Date
+2020-12-01    0.156282
+dtype: float64
+2025-03-25 17:38:44,321 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:38:44,326 - my_logger - INFO - Date
+2021-02-01    0.016377
+dtype: float64
+2025-03-25 17:38:44,332 - my_logger - INFO - Date
+2021-03-01    0.00967
+dtype: float64
+2025-03-25 17:38:44,338 - my_logger - INFO - Date
+2021-04-01    0.02908
+dtype: float64
+2025-03-25 17:38:44,344 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:38:44,350 - my_logger - INFO - Date
+2021-06-01    0.046474
+dtype: float64
+2025-03-25 17:38:45,003 - my_logger - INFO - Date
+2021-07-01    0.043272
+dtype: float64
+2025-03-25 17:38:45,009 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:38:45,015 - my_logger - INFO - Date
+2021-09-01    0.025217
+dtype: float64
+2025-03-25 17:38:45,020 - my_logger - INFO - Date
+2021-10-01    0.007305
+dtype: float64
+2025-03-25 17:38:45,026 - my_logger - INFO - Date
+2021-11-01    0.052827
+dtype: float64
+2025-03-25 17:38:45,033 - my_logger - INFO - Date
+2021-12-01    0.034123
+dtype: float64
+2025-03-25 17:38:45,733 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:38:45,738 - my_logger - INFO - Date
+2022-02-01   -0.087673
+dtype: float64
+2025-03-25 17:38:45,744 - my_logger - INFO - Date
+2022-03-01    0.011306
+dtype: float64
+2025-03-25 17:38:45,750 - my_logger - INFO - Date
+2022-04-01   -0.045351
+dtype: float64
+2025-03-25 17:38:45,755 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:38:45,761 - my_logger - INFO - Date
+2022-06-01   -0.081269
+dtype: float64
+2025-03-25 17:38:46,595 - my_logger - INFO - Date
+2022-07-01    0.010165
+dtype: float64
+2025-03-25 17:38:46,600 - my_logger - INFO - Date
+2022-08-01   -0.001463
+dtype: float64
+2025-03-25 17:38:46,606 - my_logger - INFO - Date
+2022-09-01   -0.067679
+dtype: float64
+2025-03-25 17:38:46,613 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:38:46,618 - my_logger - INFO - Date
+2022-11-01    0.046995
+dtype: float64
+2025-03-25 17:38:46,624 - my_logger - INFO - Date
+2022-12-01    0.012183
+dtype: float64
+2025-03-25 17:38:47,346 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:38:47,352 - my_logger - INFO - Date
+2023-02-01    0.044893
+dtype: float64
+2025-03-25 17:38:47,358 - my_logger - INFO - Date
+2023-03-01    0.032774
+dtype: float64
+2025-03-25 17:38:47,364 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:38:47,369 - my_logger - INFO - Date
+2023-05-01   -0.003186
+dtype: float64
+2025-03-25 17:38:47,375 - my_logger - INFO - Date
+2023-06-01    0.045207
+dtype: float64
+2025-03-25 17:38:48,069 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:38:48,074 - my_logger - INFO - Date
+2023-08-01    0.004618
+dtype: float64
+2025-03-25 17:38:48,080 - my_logger - INFO - Date
+2023-09-01   -0.033474
+dtype: float64
+2025-03-25 17:38:48,086 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:38:48,092 - my_logger - INFO - Date
+2023-11-01    0.046408
+dtype: float64
+2025-03-25 17:38:48,099 - my_logger - INFO - Date
+2023-12-01    0.054977
+dtype: float64
+2025-03-25 17:39:57,790 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:39:57,795 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:39:57,800 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:39:57,807 - my_logger - INFO - Date
+2020-04-01   -0.047011
+dtype: float64
+2025-03-25 17:39:57,813 - my_logger - INFO - Date
+2020-05-01    0.04299
+dtype: float64
+2025-03-25 17:39:57,818 - my_logger - INFO - Date
+2020-06-01    0.022327
+dtype: float64
+2025-03-25 17:39:58,678 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 17:39:58,683 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:39:58,690 - my_logger - INFO - Date
+2020-09-01    0.01066
+dtype: float64
+2025-03-25 17:39:58,695 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 17:39:58,701 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:39:58,706 - my_logger - INFO - Date
+2020-12-01    0.156282
+dtype: float64
+2025-03-25 17:39:59,513 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:39:59,518 - my_logger - INFO - Date
+2021-02-01    0.010307
+dtype: float64
+2025-03-25 17:39:59,524 - my_logger - INFO - Date
+2021-03-01    0.013885
+dtype: float64
+2025-03-25 17:39:59,531 - my_logger - INFO - Date
+2021-04-01    0.033668
+dtype: float64
+2025-03-25 17:39:59,538 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:39:59,544 - my_logger - INFO - Date
+2021-06-01    0.045947
+dtype: float64
+2025-03-25 17:40:00,219 - my_logger - INFO - Date
+2021-07-01    0.043905
+dtype: float64
+2025-03-25 17:40:00,225 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:40:00,230 - my_logger - INFO - Date
+2021-09-01    0.03044
+dtype: float64
+2025-03-25 17:40:00,236 - my_logger - INFO - Date
+2021-10-01    0.002571
+dtype: float64
+2025-03-25 17:40:00,242 - my_logger - INFO - Date
+2021-11-01    0.056137
+dtype: float64
+2025-03-25 17:40:00,248 - my_logger - INFO - Date
+2021-12-01    0.032505
+dtype: float64
+2025-03-25 17:40:00,894 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:40:00,899 - my_logger - INFO - Date
+2022-02-01   -0.085774
+dtype: float64
+2025-03-25 17:40:00,905 - my_logger - INFO - Date
+2022-03-01    0.014723
+dtype: float64
+2025-03-25 17:40:00,911 - my_logger - INFO - Date
+2022-04-01   -0.045324
+dtype: float64
+2025-03-25 17:40:00,916 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:40:00,922 - my_logger - INFO - Date
+2022-06-01   -0.073394
+dtype: float64
+2025-03-25 17:40:01,768 - my_logger - INFO - Date
+2022-07-01    0.022326
+dtype: float64
+2025-03-25 17:40:01,775 - my_logger - INFO - Date
+2022-08-01   -0.005959
+dtype: float64
+2025-03-25 17:40:01,781 - my_logger - INFO - Date
+2022-09-01   -0.07316
+dtype: float64
+2025-03-25 17:40:01,788 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:40:01,795 - my_logger - INFO - Date
+2022-11-01    0.054046
+dtype: float64
+2025-03-25 17:40:01,800 - my_logger - INFO - Date
+2022-12-01    0.002956
+dtype: float64
+2025-03-25 17:40:02,511 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:40:02,516 - my_logger - INFO - Date
+2023-02-01    0.033929
+dtype: float64
+2025-03-25 17:40:02,523 - my_logger - INFO - Date
+2023-03-01    0.029513
+dtype: float64
+2025-03-25 17:40:02,529 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:40:02,534 - my_logger - INFO - Date
+2023-05-01   -0.006526
+dtype: float64
+2025-03-25 17:40:02,540 - my_logger - INFO - Date
+2023-06-01    0.043075
+dtype: float64
+2025-03-25 17:40:03,333 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:40:03,338 - my_logger - INFO - Date
+2023-08-01    0.00839
+dtype: float64
+2025-03-25 17:40:03,344 - my_logger - INFO - Date
+2023-09-01   -0.030361
+dtype: float64
+2025-03-25 17:40:03,351 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:40:03,357 - my_logger - INFO - Date
+2023-11-01    0.045164
+dtype: float64
+2025-03-25 17:40:03,363 - my_logger - INFO - Date
+2023-12-01    0.055817
+dtype: float64
+2025-03-25 17:42:30,909 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:42:30,914 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:42:30,919 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:42:30,925 - my_logger - INFO - Date
+2020-04-01   -0.055601
+dtype: float64
+2025-03-25 17:42:30,930 - my_logger - INFO - Date
+2020-05-01    0.052791
+dtype: float64
+2025-03-25 17:42:30,937 - my_logger - INFO - Date
+2020-06-01    0.022714
+dtype: float64
+2025-03-25 17:42:31,714 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 17:42:31,720 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:42:31,726 - my_logger - INFO - Date
+2020-09-01    0.01066
+dtype: float64
+2025-03-25 17:42:31,734 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 17:42:31,739 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:42:31,745 - my_logger - INFO - Date
+2020-12-01    0.156282
+dtype: float64
+2025-03-25 17:42:32,591 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:42:32,596 - my_logger - INFO - Date
+2021-02-01    0.012322
+dtype: float64
+2025-03-25 17:42:32,603 - my_logger - INFO - Date
+2021-03-01    0.012956
+dtype: float64
+2025-03-25 17:42:32,609 - my_logger - INFO - Date
+2021-04-01    0.027987
+dtype: float64
+2025-03-25 17:42:32,614 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:42:32,620 - my_logger - INFO - Date
+2021-06-01    0.042799
+dtype: float64
+2025-03-25 17:42:33,320 - my_logger - INFO - Date
+2021-07-01    0.043645
+dtype: float64
+2025-03-25 17:42:33,326 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:42:33,333 - my_logger - INFO - Date
+2021-09-01    0.033798
+dtype: float64
+2025-03-25 17:42:33,339 - my_logger - INFO - Date
+2021-10-01    0.00068
+dtype: float64
+2025-03-25 17:42:33,344 - my_logger - INFO - Date
+2021-11-01    0.06378
+dtype: float64
+2025-03-25 17:42:33,353 - my_logger - INFO - Date
+2021-12-01    0.030479
+dtype: float64
+2025-03-25 17:42:33,989 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:42:33,994 - my_logger - INFO - Date
+2022-02-01   -0.089756
+dtype: float64
+2025-03-25 17:42:34,000 - my_logger - INFO - Date
+2022-03-01    0.006743
+dtype: float64
+2025-03-25 17:42:34,009 - my_logger - INFO - Date
+2022-04-01   -0.044097
+dtype: float64
+2025-03-25 17:42:34,017 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:42:34,023 - my_logger - INFO - Date
+2022-06-01   -0.081988
+dtype: float64
+2025-03-25 17:42:34,768 - my_logger - INFO - Date
+2022-07-01    0.015124
+dtype: float64
+2025-03-25 17:42:34,774 - my_logger - INFO - Date
+2022-08-01   -0.001413
+dtype: float64
+2025-03-25 17:42:34,782 - my_logger - INFO - Date
+2022-09-01   -0.072037
+dtype: float64
+2025-03-25 17:42:34,788 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:42:34,795 - my_logger - INFO - Date
+2022-11-01    0.04465
+dtype: float64
+2025-03-25 17:42:34,802 - my_logger - INFO - Date
+2022-12-01    0.008998
+dtype: float64
+2025-03-25 17:42:35,646 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:42:35,653 - my_logger - INFO - Date
+2023-02-01    0.034772
+dtype: float64
+2025-03-25 17:42:35,661 - my_logger - INFO - Date
+2023-03-01    0.026816
+dtype: float64
+2025-03-25 17:42:35,669 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:42:35,676 - my_logger - INFO - Date
+2023-05-01   -0.010652
+dtype: float64
+2025-03-25 17:42:35,685 - my_logger - INFO - Date
+2023-06-01    0.039001
+dtype: float64
+2025-03-25 17:42:36,440 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:42:36,447 - my_logger - INFO - Date
+2023-08-01    0.002239
+dtype: float64
+2025-03-25 17:42:36,453 - my_logger - INFO - Date
+2023-09-01   -0.033822
+dtype: float64
+2025-03-25 17:42:36,460 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:42:36,467 - my_logger - INFO - Date
+2023-11-01    0.045838
+dtype: float64
+2025-03-25 17:42:36,472 - my_logger - INFO - Date
+2023-12-01    0.059373
+dtype: float64
+2025-03-25 17:45:45,771 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:45:45,777 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:45:45,785 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:45:45,793 - my_logger - INFO - Date
+2020-04-01   -0.046749
+dtype: float64
+2025-03-25 17:45:45,800 - my_logger - INFO - Date
+2020-05-01    0.043946
+dtype: float64
+2025-03-25 17:45:45,808 - my_logger - INFO - Date
+2020-06-01    0.020514
+dtype: float64
+2025-03-25 17:45:46,635 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 17:45:46,644 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:45:46,651 - my_logger - INFO - Date
+2020-09-01    0.01066
+dtype: float64
+2025-03-25 17:45:46,659 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 17:45:46,666 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:45:46,673 - my_logger - INFO - Date
+2020-12-01    0.156282
+dtype: float64
+2025-03-25 17:45:47,497 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:45:47,504 - my_logger - INFO - Date
+2021-02-01    0.009888
+dtype: float64
+2025-03-25 17:45:47,512 - my_logger - INFO - Date
+2021-03-01    0.012535
+dtype: float64
+2025-03-25 17:45:47,520 - my_logger - INFO - Date
+2021-04-01    0.031108
+dtype: float64
+2025-03-25 17:45:47,528 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:45:47,535 - my_logger - INFO - Date
+2021-06-01    0.045075
+dtype: float64
+2025-03-25 17:45:48,187 - my_logger - INFO - Date
+2021-07-01    0.045125
+dtype: float64
+2025-03-25 17:45:48,195 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:45:48,201 - my_logger - INFO - Date
+2021-09-01    0.027841
+dtype: float64
+2025-03-25 17:45:48,209 - my_logger - INFO - Date
+2021-10-01    0.00694
+dtype: float64
+2025-03-25 17:45:48,216 - my_logger - INFO - Date
+2021-11-01    0.056216
+dtype: float64
+2025-03-25 17:45:48,224 - my_logger - INFO - Date
+2021-12-01    0.031397
+dtype: float64
+2025-03-25 17:45:48,862 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:45:48,869 - my_logger - INFO - Date
+2022-02-01   -0.08399
+dtype: float64
+2025-03-25 17:45:48,877 - my_logger - INFO - Date
+2022-03-01    0.005711
+dtype: float64
+2025-03-25 17:45:48,884 - my_logger - INFO - Date
+2022-04-01   -0.038573
+dtype: float64
+2025-03-25 17:45:48,892 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:45:48,899 - my_logger - INFO - Date
+2022-06-01   -0.074913
+dtype: float64
+2025-03-25 17:45:49,696 - my_logger - INFO - Date
+2022-07-01   -0.003303
+dtype: float64
+2025-03-25 17:45:49,704 - my_logger - INFO - Date
+2022-08-01    0.010976
+dtype: float64
+2025-03-25 17:45:49,711 - my_logger - INFO - Date
+2022-09-01   -0.063382
+dtype: float64
+2025-03-25 17:45:49,718 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:45:49,726 - my_logger - INFO - Date
+2022-11-01    0.022497
+dtype: float64
+2025-03-25 17:45:49,733 - my_logger - INFO - Date
+2022-12-01    0.024151
+dtype: float64
+2025-03-25 17:45:50,455 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:45:50,462 - my_logger - INFO - Date
+2023-02-01    0.040439
+dtype: float64
+2025-03-25 17:45:50,471 - my_logger - INFO - Date
+2023-03-01    0.034754
+dtype: float64
+2025-03-25 17:45:50,480 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:45:50,487 - my_logger - INFO - Date
+2023-05-01   -0.001821
+dtype: float64
+2025-03-25 17:45:50,496 - my_logger - INFO - Date
+2023-06-01    0.049853
+dtype: float64
+2025-03-25 17:45:51,200 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:45:51,207 - my_logger - INFO - Date
+2023-08-01    0.006126
+dtype: float64
+2025-03-25 17:45:51,215 - my_logger - INFO - Date
+2023-09-01   -0.032995
+dtype: float64
+2025-03-25 17:45:51,222 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:45:51,230 - my_logger - INFO - Date
+2023-11-01    0.048246
+dtype: float64
+2025-03-25 17:45:51,237 - my_logger - INFO - Date
+2023-12-01    0.055945
+dtype: float64
+2025-03-25 17:48:26,697 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:48:26,704 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:48:26,712 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:48:26,720 - my_logger - INFO - Date
+2020-04-01   -0.052221
+dtype: float64
+2025-03-25 17:48:26,728 - my_logger - INFO - Date
+2020-05-01    0.046653
+dtype: float64
+2025-03-25 17:48:26,736 - my_logger - INFO - Date
+2020-06-01    0.022486
+dtype: float64
+2025-03-25 17:48:27,799 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 17:48:27,807 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:48:27,814 - my_logger - INFO - Date
+2020-09-01    0.01066
+dtype: float64
+2025-03-25 17:48:27,821 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 17:48:27,829 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:48:27,836 - my_logger - INFO - Date
+2020-12-01    0.156282
+dtype: float64
+2025-03-25 17:48:28,645 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:48:28,652 - my_logger - INFO - Date
+2021-02-01    0.010526
+dtype: float64
+2025-03-25 17:48:28,660 - my_logger - INFO - Date
+2021-03-01    0.013919
+dtype: float64
+2025-03-25 17:48:28,669 - my_logger - INFO - Date
+2021-04-01    0.031201
+dtype: float64
+2025-03-25 17:48:28,676 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:48:28,683 - my_logger - INFO - Date
+2021-06-01    0.046202
+dtype: float64
+2025-03-25 17:48:29,361 - my_logger - INFO - Date
+2021-07-01    0.043341
+dtype: float64
+2025-03-25 17:48:29,369 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:48:29,375 - my_logger - INFO - Date
+2021-09-01    0.022848
+dtype: float64
+2025-03-25 17:48:29,383 - my_logger - INFO - Date
+2021-10-01    0.00848
+dtype: float64
+2025-03-25 17:48:29,391 - my_logger - INFO - Date
+2021-11-01    0.045063
+dtype: float64
+2025-03-25 17:48:29,398 - my_logger - INFO - Date
+2021-12-01    0.040017
+dtype: float64
+2025-03-25 17:48:30,057 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:48:30,064 - my_logger - INFO - Date
+2022-02-01   -0.082981
+dtype: float64
+2025-03-25 17:48:30,072 - my_logger - INFO - Date
+2022-03-01    0.00864
+dtype: float64
+2025-03-25 17:48:30,080 - my_logger - INFO - Date
+2022-04-01   -0.039838
+dtype: float64
+2025-03-25 17:48:30,087 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:48:30,094 - my_logger - INFO - Date
+2022-06-01   -0.074705
+dtype: float64
+2025-03-25 17:48:30,943 - my_logger - INFO - Date
+2022-07-01    0.019812
+dtype: float64
+2025-03-25 17:48:30,951 - my_logger - INFO - Date
+2022-08-01   -0.007476
+dtype: float64
+2025-03-25 17:48:30,958 - my_logger - INFO - Date
+2022-09-01   -0.07045
+dtype: float64
+2025-03-25 17:48:30,966 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:48:30,974 - my_logger - INFO - Date
+2022-11-01    0.058225
+dtype: float64
+2025-03-25 17:48:30,981 - my_logger - INFO - Date
+2022-12-01    0.004262
+dtype: float64
+2025-03-25 17:48:31,695 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:48:31,702 - my_logger - INFO - Date
+2023-02-01    0.034638
+dtype: float64
+2025-03-25 17:48:31,709 - my_logger - INFO - Date
+2023-03-01    0.031435
+dtype: float64
+2025-03-25 17:48:31,717 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:48:31,724 - my_logger - INFO - Date
+2023-05-01    0.002793
+dtype: float64
+2025-03-25 17:48:31,732 - my_logger - INFO - Date
+2023-06-01    0.045014
+dtype: float64
+2025-03-25 17:48:32,449 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:48:32,456 - my_logger - INFO - Date
+2023-08-01    0.007833
+dtype: float64
+2025-03-25 17:48:32,465 - my_logger - INFO - Date
+2023-09-01   -0.034377
+dtype: float64
+2025-03-25 17:48:32,473 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:48:32,481 - my_logger - INFO - Date
+2023-11-01    0.049908
+dtype: float64
+2025-03-25 17:48:32,490 - my_logger - INFO - Date
+2023-12-01    0.057605
+dtype: float64
+2025-03-25 17:50:02,789 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:50:02,797 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:50:02,804 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:50:02,811 - my_logger - INFO - Date
+2020-04-01   -0.061201
+dtype: float64
+2025-03-25 17:50:02,819 - my_logger - INFO - Date
+2020-05-01    0.047478
+dtype: float64
+2025-03-25 17:50:02,826 - my_logger - INFO - Date
+2020-06-01    0.024045
+dtype: float64
+2025-03-25 17:50:03,645 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 17:50:03,652 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:50:03,659 - my_logger - INFO - Date
+2020-09-01    0.01066
+dtype: float64
+2025-03-25 17:50:03,667 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 17:50:03,674 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:50:03,684 - my_logger - INFO - Date
+2020-12-01    0.156282
+dtype: float64
+2025-03-25 17:50:04,518 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:50:04,525 - my_logger - INFO - Date
+2021-02-01    0.013549
+dtype: float64
+2025-03-25 17:50:04,535 - my_logger - INFO - Date
+2021-03-01    0.015584
+dtype: float64
+2025-03-25 17:50:04,542 - my_logger - INFO - Date
+2021-04-01    0.027447
+dtype: float64
+2025-03-25 17:50:04,551 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:50:04,560 - my_logger - INFO - Date
+2021-06-01    0.044081
+dtype: float64
+2025-03-25 17:50:05,229 - my_logger - INFO - Date
+2021-07-01    0.042732
+dtype: float64
+2025-03-25 17:50:05,237 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:50:05,245 - my_logger - INFO - Date
+2021-09-01    0.026327
+dtype: float64
+2025-03-25 17:50:05,253 - my_logger - INFO - Date
+2021-10-01    0.008634
+dtype: float64
+2025-03-25 17:50:05,260 - my_logger - INFO - Date
+2021-11-01    0.055146
+dtype: float64
+2025-03-25 17:50:05,270 - my_logger - INFO - Date
+2021-12-01    0.03152
+dtype: float64
+2025-03-25 17:50:05,961 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:50:05,969 - my_logger - INFO - Date
+2022-02-01   -0.080574
+dtype: float64
+2025-03-25 17:50:05,977 - my_logger - INFO - Date
+2022-03-01    0.003445
+dtype: float64
+2025-03-25 17:50:05,986 - my_logger - INFO - Date
+2022-04-01   -0.034102
+dtype: float64
+2025-03-25 17:50:05,994 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:50:06,001 - my_logger - INFO - Date
+2022-06-01   -0.076296
+dtype: float64
+2025-03-25 17:50:06,846 - my_logger - INFO - Date
+2022-07-01    0.013402
+dtype: float64
+2025-03-25 17:50:06,853 - my_logger - INFO - Date
+2022-08-01    0.000167
+dtype: float64
+2025-03-25 17:50:06,861 - my_logger - INFO - Date
+2022-09-01   -0.070673
+dtype: float64
+2025-03-25 17:50:06,869 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:50:06,876 - my_logger - INFO - Date
+2022-11-01    0.045599
+dtype: float64
+2025-03-25 17:50:06,884 - my_logger - INFO - Date
+2022-12-01    0.00974
+dtype: float64
+2025-03-25 17:50:07,663 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:50:07,671 - my_logger - INFO - Date
+2023-02-01    0.032353
+dtype: float64
+2025-03-25 17:50:07,678 - my_logger - INFO - Date
+2023-03-01    0.030615
+dtype: float64
+2025-03-25 17:50:07,686 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:50:07,693 - my_logger - INFO - Date
+2023-05-01   -0.000036
+dtype: float64
+2025-03-25 17:50:07,701 - my_logger - INFO - Date
+2023-06-01    0.038201
+dtype: float64
+2025-03-25 17:50:08,420 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:50:08,427 - my_logger - INFO - Date
+2023-08-01    0.005333
+dtype: float64
+2025-03-25 17:50:08,435 - my_logger - INFO - Date
+2023-09-01   -0.032779
+dtype: float64
+2025-03-25 17:50:08,442 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:50:08,452 - my_logger - INFO - Date
+2023-11-01    0.045198
+dtype: float64
+2025-03-25 17:50:08,459 - my_logger - INFO - Date
+2023-12-01    0.057329
+dtype: float64
+2025-03-25 17:51:50,881 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:51:50,889 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:51:50,897 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:51:50,904 - my_logger - INFO - Date
+2020-04-01   -0.056129
+dtype: float64
+2025-03-25 17:51:50,913 - my_logger - INFO - Date
+2020-05-01    0.043614
+dtype: float64
+2025-03-25 17:51:50,921 - my_logger - INFO - Date
+2020-06-01    0.021017
+dtype: float64
+2025-03-25 17:51:51,907 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 17:51:51,914 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:51:51,922 - my_logger - INFO - Date
+2020-09-01    0.01066
+dtype: float64
+2025-03-25 17:51:51,930 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 17:51:51,937 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:51:51,945 - my_logger - INFO - Date
+2020-12-01    0.156282
+dtype: float64
+2025-03-25 17:51:52,947 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:51:52,955 - my_logger - INFO - Date
+2021-02-01    0.014121
+dtype: float64
+2025-03-25 17:51:52,962 - my_logger - INFO - Date
+2021-03-01    0.015082
+dtype: float64
+2025-03-25 17:51:52,972 - my_logger - INFO - Date
+2021-04-01    0.03252
+dtype: float64
+2025-03-25 17:51:52,980 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:51:52,987 - my_logger - INFO - Date
+2021-06-01    0.046228
+dtype: float64
+2025-03-25 17:51:53,706 - my_logger - INFO - Date
+2021-07-01    0.045395
+dtype: float64
+2025-03-25 17:51:53,715 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:51:53,722 - my_logger - INFO - Date
+2021-09-01    0.028607
+dtype: float64
+2025-03-25 17:51:53,729 - my_logger - INFO - Date
+2021-10-01    0.005659
+dtype: float64
+2025-03-25 17:51:53,737 - my_logger - INFO - Date
+2021-11-01    0.054161
+dtype: float64
+2025-03-25 17:51:53,745 - my_logger - INFO - Date
+2021-12-01    0.035185
+dtype: float64
+2025-03-25 17:51:54,484 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:51:54,491 - my_logger - INFO - Date
+2022-02-01   -0.08239
+dtype: float64
+2025-03-25 17:51:54,498 - my_logger - INFO - Date
+2022-03-01    0.006269
+dtype: float64
+2025-03-25 17:51:54,505 - my_logger - INFO - Date
+2022-04-01   -0.039198
+dtype: float64
+2025-03-25 17:51:54,513 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:51:54,524 - my_logger - INFO - Date
+2022-06-01   -0.078809
+dtype: float64
+2025-03-25 17:51:55,607 - my_logger - INFO - Date
+2022-07-01    0.016591
+dtype: float64
+2025-03-25 17:51:55,615 - my_logger - INFO - Date
+2022-08-01   -0.005001
+dtype: float64
+2025-03-25 17:51:55,623 - my_logger - INFO - Date
+2022-09-01   -0.070208
+dtype: float64
+2025-03-25 17:51:55,632 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:51:55,639 - my_logger - INFO - Date
+2022-11-01    0.051259
+dtype: float64
+2025-03-25 17:51:55,647 - my_logger - INFO - Date
+2022-12-01    0.007369
+dtype: float64
+2025-03-25 17:51:56,645 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:51:56,652 - my_logger - INFO - Date
+2023-02-01    0.040529
+dtype: float64
+2025-03-25 17:51:56,659 - my_logger - INFO - Date
+2023-03-01    0.03502
+dtype: float64
+2025-03-25 17:51:56,666 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:51:56,674 - my_logger - INFO - Date
+2023-05-01    0.006177
+dtype: float64
+2025-03-25 17:51:56,683 - my_logger - INFO - Date
+2023-06-01    0.040025
+dtype: float64
+2025-03-25 17:51:57,476 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:51:57,482 - my_logger - INFO - Date
+2023-08-01    0.004049
+dtype: float64
+2025-03-25 17:51:57,490 - my_logger - INFO - Date
+2023-09-01   -0.033622
+dtype: float64
+2025-03-25 17:51:57,498 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 17:51:57,505 - my_logger - INFO - Date
+2023-11-01    0.044457
+dtype: float64
+2025-03-25 17:51:57,513 - my_logger - INFO - Date
+2023-12-01    0.057067
+dtype: float64
+2025-03-25 18:04:38,919 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 18:04:38,926 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 18:04:38,933 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 18:04:38,940 - my_logger - INFO - Date
+2020-04-01   -0.049791
+dtype: float64
+2025-03-25 18:04:38,949 - my_logger - INFO - Date
+2020-05-01    0.041835
+dtype: float64
+2025-03-25 18:04:38,956 - my_logger - INFO - Date
+2020-06-01    0.019856
+dtype: float64
+2025-03-25 18:04:39,775 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 18:04:39,783 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 18:04:39,791 - my_logger - INFO - Date
+2020-09-01    0.01066
+dtype: float64
+2025-03-25 18:04:39,798 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 18:04:39,805 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 18:04:39,814 - my_logger - INFO - Date
+2020-12-01    0.156282
+dtype: float64
+2025-03-25 18:04:40,662 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 18:04:40,668 - my_logger - INFO - Date
+2021-02-01    0.01375
+dtype: float64
+2025-03-25 18:04:40,677 - my_logger - INFO - Date
+2021-03-01    0.011326
+dtype: float64
+2025-03-25 18:04:40,686 - my_logger - INFO - Date
+2021-04-01    0.029021
+dtype: float64
+2025-03-25 18:04:40,693 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 18:04:40,701 - my_logger - INFO - Date
+2021-06-01    0.044652
+dtype: float64
+2025-03-25 18:04:41,364 - my_logger - INFO - Date
+2021-07-01    0.048237
+dtype: float64
+2025-03-25 18:04:41,371 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 18:04:41,378 - my_logger - INFO - Date
+2021-09-01    0.038875
+dtype: float64
+2025-03-25 18:04:41,386 - my_logger - INFO - Date
+2021-10-01   -0.002768
+dtype: float64
+2025-03-25 18:04:41,393 - my_logger - INFO - Date
+2021-11-01    0.069359
+dtype: float64
+2025-03-25 18:04:41,400 - my_logger - INFO - Date
+2021-12-01    0.030734
+dtype: float64
+2025-03-25 18:04:42,045 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 18:04:42,052 - my_logger - INFO - Date
+2022-02-01   -0.082398
+dtype: float64
+2025-03-25 18:04:42,060 - my_logger - INFO - Date
+2022-03-01    0.009173
+dtype: float64
+2025-03-25 18:04:42,067 - my_logger - INFO - Date
+2022-04-01   -0.042142
+dtype: float64
+2025-03-25 18:04:42,074 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 18:04:42,081 - my_logger - INFO - Date
+2022-06-01   -0.077661
+dtype: float64
+2025-03-25 18:04:42,839 - my_logger - INFO - Date
+2022-07-01    0.007589
+dtype: float64
+2025-03-25 18:04:42,847 - my_logger - INFO - Date
+2022-08-01    0.005316
+dtype: float64
+2025-03-25 18:04:42,854 - my_logger - INFO - Date
+2022-09-01   -0.068982
+dtype: float64
+2025-03-25 18:04:42,861 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 18:04:42,868 - my_logger - INFO - Date
+2022-11-01    0.03741
+dtype: float64
+2025-03-25 18:04:42,875 - my_logger - INFO - Date
+2022-12-01    0.014987
+dtype: float64
+2025-03-25 18:04:43,660 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 18:04:43,668 - my_logger - INFO - Date
+2023-02-01    0.035294
+dtype: float64
+2025-03-25 18:04:43,677 - my_logger - INFO - Date
+2023-03-01    0.031436
+dtype: float64
+2025-03-25 18:04:43,686 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 18:04:43,695 - my_logger - INFO - Date
+2023-05-01   -0.003104
+dtype: float64
+2025-03-25 18:04:43,704 - my_logger - INFO - Date
+2023-06-01    0.035911
+dtype: float64
+2025-03-25 18:04:44,426 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 18:04:44,433 - my_logger - INFO - Date
+2023-08-01    0.004218
+dtype: float64
+2025-03-25 18:04:44,441 - my_logger - INFO - Date
+2023-09-01   -0.032516
+dtype: float64
+2025-03-25 18:04:44,449 - my_logger - INFO - Series([], dtype: float64)
+2025-03-25 18:04:44,456 - my_logger - INFO - Date
+2023-11-01    0.045652
+dtype: float64
+2025-03-25 18:04:44,464 - my_logger - INFO - Date
+2023-12-01    0.054342
+dtype: float64
+2025-03-25 18:06:21,807 - my_logger - INFO - Date
+2020-01-01    0.024612
+dtype: float64
+2025-03-25 18:06:21,817 - my_logger - INFO - Date
+2020-02-01   -0.033623
+dtype: float64
+2025-03-25 18:06:21,827 - my_logger - INFO - Date
+2020-03-01   -0.070322
+dtype: float64
+2025-03-25 18:06:21,838 - my_logger - INFO - Date
+2020-04-01    0.057139
+dtype: float64
+2025-03-25 18:06:21,848 - my_logger - INFO - Date
+2020-05-01    0.07987
+dtype: float64
+2025-03-25 18:06:21,857 - my_logger - INFO - Date
+2020-06-01    0.044237
+dtype: float64
+2025-03-25 18:06:22,688 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 18:06:22,696 - my_logger - INFO - Date
+2020-08-01    0.049204
+dtype: float64
+2025-03-25 18:06:22,704 - my_logger - INFO - Date
+2020-09-01   -0.036237
+dtype: float64
+2025-03-25 18:06:22,712 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 18:06:22,720 - my_logger - INFO - Date
+2020-11-01    0.097201
+dtype: float64
+2025-03-25 18:06:22,728 - my_logger - INFO - Date
+2020-12-01    0.053929
+dtype: float64
+2025-03-25 18:06:23,511 - my_logger - INFO - Date
+2021-01-01    0.008314
+dtype: float64
+2025-03-25 18:06:23,520 - my_logger - INFO - Date
+2021-02-01    0.017722
+dtype: float64
+2025-03-25 18:06:23,530 - my_logger - INFO - Date
+2021-03-01    0.007358
+dtype: float64
+2025-03-25 18:06:23,537 - my_logger - INFO - Date
+2021-04-01    0.027941
+dtype: float64
+2025-03-25 18:06:23,546 - my_logger - INFO - Date
+2021-05-01    0.0242
+dtype: float64
+2025-03-25 18:06:23,554 - my_logger - INFO - Date
+2021-06-01    0.020295
+dtype: float64
+2025-03-25 18:06:25,882 - my_logger - INFO - Date
+2021-07-01    0.045193
+dtype: float64
+2025-03-25 18:06:25,896 - my_logger - INFO - Date
+2021-08-01    0.040582
+dtype: float64
+2025-03-25 18:06:25,911 - my_logger - INFO - Date
+2021-09-01   -0.001779
+dtype: float64
+2025-03-25 18:06:25,923 - my_logger - INFO - Date
+2021-10-01    0.006664
+dtype: float64
+2025-03-25 18:06:25,938 - my_logger - INFO - Date
+2021-11-01    0.066604
+dtype: float64
+2025-03-25 18:06:25,954 - my_logger - INFO - Date
+2021-12-01    0.030349
+dtype: float64
+2025-03-25 18:06:27,966 - my_logger - INFO - Date
+2022-01-01    0.005644
+dtype: float64
+2025-03-25 18:06:27,982 - my_logger - INFO - Date
+2022-02-01   -0.030114
+dtype: float64
+2025-03-25 18:06:27,995 - my_logger - INFO - Date
+2022-03-01    0.009018
+dtype: float64
+2025-03-25 18:06:28,005 - my_logger - INFO - Date
+2022-04-01   -0.028865
+dtype: float64
+2025-03-25 18:06:28,015 - my_logger - INFO - Date
+2022-05-01   -0.015455
+dtype: float64
+2025-03-25 18:06:28,039 - my_logger - INFO - Date
+2022-06-01   -0.0763
+dtype: float64
+2025-03-25 18:06:29,026 - my_logger - INFO - Date
+2020-01-01    0.030048
+dtype: float64
+2025-03-25 18:06:29,050 - my_logger - INFO - Date
+2020-02-01   -0.011941
+dtype: float64
+2025-03-25 18:06:29,066 - my_logger - INFO - Date
+2020-03-01   -0.061952
+dtype: float64
+2025-03-25 18:06:29,077 - my_logger - INFO - Date
+2020-04-01    0.03478
+dtype: float64
+2025-03-25 18:06:29,093 - my_logger - INFO - Date
+2020-05-01    0.087395
+dtype: float64
+2025-03-25 18:06:29,114 - my_logger - INFO - Date
+2020-06-01    0.039092
+dtype: float64
+2025-03-25 18:06:29,948 - my_logger - INFO - Date
+2022-07-01    0.027708
+dtype: float64
+2025-03-25 18:06:29,962 - my_logger - INFO - Date
+2022-08-01   -0.00185
+dtype: float64
+2025-03-25 18:06:29,971 - my_logger - INFO - Date
+2022-09-01   -0.084629
+dtype: float64
+2025-03-25 18:06:29,981 - my_logger - INFO - Date
+2022-10-01    0.006528
+dtype: float64
+2025-03-25 18:06:30,011 - my_logger - INFO - Date
+2022-11-01    0.043721
+dtype: float64
+2025-03-25 18:06:30,023 - my_logger - INFO - Date
+2022-12-01   -0.000496
+dtype: float64
+2025-03-25 18:06:30,997 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-25 18:06:31,008 - my_logger - INFO - Date
+2020-08-01    0.049204
+dtype: float64
+2025-03-25 18:06:31,017 - my_logger - INFO - Date
+2020-09-01   -0.036237
+dtype: float64
+2025-03-25 18:06:31,028 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-25 18:06:31,049 - my_logger - INFO - Date
+2020-11-01    0.097201
+dtype: float64
+2025-03-25 18:06:31,059 - my_logger - INFO - Date
+2020-12-01    0.053929
+dtype: float64
+2025-03-25 18:06:31,962 - my_logger - INFO - Date
+2023-01-01    0.060282
+dtype: float64
+2025-03-25 18:06:31,977 - my_logger - INFO - Date
+2023-02-01   -0.033642
+dtype: float64
+2025-03-25 18:06:31,988 - my_logger - INFO - Date
+2023-03-01    0.017375
+dtype: float64
+2025-03-25 18:06:32,004 - my_logger - INFO - Date
+2023-04-01    0.008465
+dtype: float64
+2025-03-25 18:06:32,015 - my_logger - INFO - Date
+2023-05-01   -0.022833
+dtype: float64
+2025-03-25 18:06:32,028 - my_logger - INFO - Date
+2023-06-01    0.035595
+dtype: float64
+2025-03-25 18:06:32,796 - my_logger - INFO - Date
+2021-01-01    0.004302
+dtype: float64
+2025-03-25 18:06:32,812 - my_logger - INFO - Date
+2021-02-01    0.015714
+dtype: float64
+2025-03-25 18:06:32,836 - my_logger - INFO - Date
+2021-03-01    0.013641
+dtype: float64
+2025-03-25 18:06:32,860 - my_logger - INFO - Date
+2021-04-01    0.028944
+dtype: float64
+2025-03-25 18:06:32,895 - my_logger - INFO - Date
+2021-05-01    0.024346
+dtype: float64
+2025-03-25 18:06:32,912 - my_logger - INFO - Date
+2021-06-01    0.019553
+dtype: float64
+2025-03-25 18:06:33,915 - my_logger - INFO - Date
+2023-07-01    0.029807
+dtype: float64
+2025-03-25 18:06:33,935 - my_logger - INFO - Date
+2023-08-01   -0.021789
+dtype: float64
+2025-03-25 18:06:33,948 - my_logger - INFO - Date
+2023-09-01   -0.026674
+dtype: float64
+2025-03-25 18:06:33,956 - my_logger - INFO - Date
+2023-10-01   -0.026151
+dtype: float64
+2025-03-25 18:06:33,969 - my_logger - INFO - Date
+2023-11-01    0.06444
+dtype: float64
+2025-03-25 18:06:33,990 - my_logger - INFO - Date
+2023-12-01    0.05299
+dtype: float64
+2025-03-25 18:06:34,378 - my_logger - INFO - Date
+2021-07-01    0.033482
+dtype: float64
+2025-03-25 18:06:34,386 - my_logger - INFO - Date
+2021-08-01    0.033453
+dtype: float64
+2025-03-25 18:06:34,394 - my_logger - INFO - Date
+2021-09-01   -0.005768
+dtype: float64
+2025-03-25 18:06:34,402 - my_logger - INFO - Date
+2021-10-01    0.024252
+dtype: float64
+2025-03-25 18:06:34,410 - my_logger - INFO - Date
+2021-11-01    0.045926
+dtype: float64
+2025-03-25 18:06:34,418 - my_logger - INFO - Date
+2021-12-01    0.031963
+dtype: float64
+2025-03-25 18:06:35,173 - my_logger - INFO - Date
+2022-01-01   -0.009928
+dtype: float64
+2025-03-25 18:06:35,181 - my_logger - INFO - Date
+2022-02-01   -0.032131
+dtype: float64
+2025-03-25 18:06:35,189 - my_logger - INFO - Date
+2022-03-01    0.013247
+dtype: float64
+2025-03-25 18:06:35,197 - my_logger - INFO - Date
+2022-04-01   -0.032097
+dtype: float64
+2025-03-25 18:06:35,204 - my_logger - INFO - Date
+2022-05-01   -0.019762
+dtype: float64
+2025-03-25 18:06:35,214 - my_logger - INFO - Date
+2022-06-01   -0.072099
+dtype: float64
+2025-03-25 18:06:35,953 - my_logger - INFO - Date
+2022-07-01    0.011217
+dtype: float64
+2025-03-25 18:06:35,960 - my_logger - INFO - Date
+2022-08-01    0.012159
+dtype: float64
+2025-03-25 18:06:35,969 - my_logger - INFO - Date
+2022-09-01   -0.082714
+dtype: float64
+2025-03-25 18:06:35,977 - my_logger - INFO - Date
+2022-10-01   -0.008478
+dtype: float64
+2025-03-25 18:06:35,986 - my_logger - INFO - Date
+2022-11-01    0.03899
+dtype: float64
+2025-03-25 18:06:35,995 - my_logger - INFO - Date
+2022-12-01    0.011123
+dtype: float64
+2025-03-25 18:06:36,786 - my_logger - INFO - Date
+2023-01-01    0.054116
+dtype: float64
+2025-03-25 18:06:36,793 - my_logger - INFO - Date
+2023-02-01   -0.030521
+dtype: float64
+2025-03-25 18:06:36,802 - my_logger - INFO - Date
+2023-03-01    0.0187
+dtype: float64
+2025-03-25 18:06:36,811 - my_logger - INFO - Date
+2023-04-01    0.017659
+dtype: float64
+2025-03-25 18:06:36,821 - my_logger - INFO - Date
+2023-05-01   -0.012445
+dtype: float64
+2025-03-25 18:06:36,829 - my_logger - INFO - Date
+2023-06-01    0.033619
+dtype: float64
+2025-03-25 18:06:37,591 - my_logger - INFO - Date
+2023-07-01    0.030151
+dtype: float64
+2025-03-25 18:06:37,599 - my_logger - INFO - Date
+2023-08-01   -0.023365
+dtype: float64
+2025-03-25 18:06:37,608 - my_logger - INFO - Date
+2023-09-01   -0.026954
+dtype: float64
+2025-03-25 18:06:37,615 - my_logger - INFO - Date
+2023-10-01   -0.024321
+dtype: float64
+2025-03-25 18:06:37,624 - my_logger - INFO - Date
+2023-11-01    0.063902
+dtype: float64
+2025-03-25 18:06:37,632 - my_logger - INFO - Date
+2023-12-01    0.046626
+dtype: float64
+2025-03-29 14:31:05,854 - my_logger - INFO - Date
+2020-01-01    0.026263
+dtype: float64
+2025-03-29 14:31:05,869 - my_logger - INFO - Date
+2020-02-01   -0.020115
+dtype: float64
+2025-03-29 14:31:05,877 - my_logger - INFO - Date
+2020-03-01   -0.063032
+dtype: float64
+2025-03-29 14:31:05,886 - my_logger - INFO - Date
+2020-04-01    0.038508
+dtype: float64
+2025-03-29 14:31:05,895 - my_logger - INFO - Date
+2020-05-01    0.084841
+dtype: float64
+2025-03-29 14:31:05,904 - my_logger - INFO - Date
+2020-06-01    0.042541
+dtype: float64
+2025-03-29 14:31:06,753 - my_logger - INFO - Date
+2020-07-01    0.07249
+dtype: float64
+2025-03-29 14:31:06,761 - my_logger - INFO - Date
+2020-08-01    0.049204
+dtype: float64
+2025-03-29 14:31:06,770 - my_logger - INFO - Date
+2020-09-01   -0.036237
+dtype: float64
+2025-03-29 14:31:06,778 - my_logger - INFO - Date
+2020-10-01    0.014572
+dtype: float64
+2025-03-29 14:31:06,786 - my_logger - INFO - Date
+2020-11-01    0.097201
+dtype: float64
+2025-03-29 14:31:06,794 - my_logger - INFO - Date
+2020-12-01    0.053929
+dtype: float64
+2025-03-29 14:31:07,560 - my_logger - INFO - Date
+2021-01-01    0.009565
+dtype: float64
+2025-03-29 14:31:07,568 - my_logger - INFO - Date
+2021-02-01    0.021852
+dtype: float64
+2025-03-29 14:31:07,578 - my_logger - INFO - Date
+2021-03-01    0.010797
+dtype: float64
+2025-03-29 14:31:07,586 - my_logger - INFO - Date
+2021-04-01    0.025903
+dtype: float64
+2025-03-29 14:31:07,594 - my_logger - INFO - Date
+2021-05-01    0.030212
+dtype: float64
+2025-03-29 14:31:07,602 - my_logger - INFO - Date
+2021-06-01    0.016913
+dtype: float64
+2025-03-29 14:31:08,410 - my_logger - INFO - Date
+2021-07-01    0.037063
+dtype: float64
+2025-03-29 14:31:08,419 - my_logger - INFO - Date
+2021-08-01    0.036394
+dtype: float64
+2025-03-29 14:31:08,427 - my_logger - INFO - Date
+2021-09-01   -0.007993
+dtype: float64
+2025-03-29 14:31:08,436 - my_logger - INFO - Date
+2021-10-01    0.016699
+dtype: float64
+2025-03-29 14:31:08,450 - my_logger - INFO - Date
+2021-11-01    0.04939
+dtype: float64
+2025-03-29 14:31:08,460 - my_logger - INFO - Date
+2021-12-01    0.031758
+dtype: float64
+2025-03-29 14:31:09,267 - my_logger - INFO - Date
+2022-01-01   -0.014411
+dtype: float64
+2025-03-29 14:31:09,275 - my_logger - INFO - Date
+2022-02-01   -0.026144
+dtype: float64
+2025-03-29 14:31:09,284 - my_logger - INFO - Date
+2022-03-01    0.021339
+dtype: float64
+2025-03-29 14:31:09,293 - my_logger - INFO - Date
+2022-04-01   -0.049005
+dtype: float64
+2025-03-29 14:31:09,302 - my_logger - INFO - Date
+2022-05-01   -0.000848
+dtype: float64
+2025-03-29 14:31:09,310 - my_logger - INFO - Date
+2022-06-01   -0.079396
+dtype: float64
+2025-03-29 14:31:10,100 - my_logger - INFO - Date
+2022-07-01    0.008754
+dtype: float64
+2025-03-29 14:31:10,108 - my_logger - INFO - Date
+2022-08-01    0.013509
+dtype: float64
+2025-03-29 14:31:10,116 - my_logger - INFO - Date
+2022-09-01   -0.076823
+dtype: float64
+2025-03-29 14:31:10,125 - my_logger - INFO - Date
+2022-10-01   -0.013752
+dtype: float64
+2025-03-29 14:31:10,133 - my_logger - INFO - Date
+2022-11-01    0.033897
+dtype: float64
+2025-03-29 14:31:10,144 - my_logger - INFO - Date
+2022-12-01    0.015279
+dtype: float64
+2025-03-29 14:31:11,021 - my_logger - INFO - Date
+2023-01-01    0.055903
+dtype: float64
+2025-03-29 14:31:11,030 - my_logger - INFO - Date
+2023-02-01   -0.030257
+dtype: float64
+2025-03-29 14:31:11,041 - my_logger - INFO - Date
+2023-03-01    0.016409
+dtype: float64
+2025-03-29 14:31:11,049 - my_logger - INFO - Date
+2023-04-01    0.013042
+dtype: float64
+2025-03-29 14:31:11,058 - my_logger - INFO - Date
+2023-05-01   -0.018614
+dtype: float64
+2025-03-29 14:31:11,066 - my_logger - INFO - Date
+2023-06-01    0.037072
+dtype: float64
+2025-03-29 14:31:11,901 - my_logger - INFO - Date
+2023-07-01    0.028634
+dtype: float64
+2025-03-29 14:31:11,909 - my_logger - INFO - Date
+2023-08-01   -0.021384
+dtype: float64
+2025-03-29 14:31:11,920 - my_logger - INFO - Date
+2023-09-01   -0.025004
+dtype: float64
+2025-03-29 14:31:11,928 - my_logger - INFO - Date
+2023-10-01   -0.02462
+dtype: float64
+2025-03-29 14:31:11,937 - my_logger - INFO - Date
+2023-11-01    0.062531
+dtype: float64
+2025-03-29 14:31:11,945 - my_logger - INFO - Date
+2023-12-01    0.049165
+dtype: float64
+2025-03-29 14:31:47,275 - my_logger - INFO - Date
+2020-01-01    0.07502
+dtype: float64
+2025-03-29 14:31:47,284 - my_logger - INFO - Date
+2020-02-01    0.076323
+dtype: float64
+2025-03-29 14:31:47,292 - my_logger - INFO - Date
+2020-03-01   -0.050242
+dtype: float64
+2025-03-29 14:31:47,299 - my_logger - INFO - Date
+2020-04-01   -0.023929
+dtype: float64
+2025-03-29 14:31:47,308 - my_logger - INFO - Date
+2020-05-01    0.153927
+dtype: float64
+2025-03-29 14:31:47,316 - my_logger - INFO - Date
+2020-06-01    0.059341
+dtype: float64
+2025-03-29 14:32:36,836 - my_logger - INFO - Date
+2020-01-01    0.065501
+dtype: float64
+2025-03-29 14:32:36,844 - my_logger - INFO - Date
+2020-02-01    0.053266
+dtype: float64
+2025-03-29 14:32:36,853 - my_logger - INFO - Date
+2020-03-01   -0.056794
+dtype: float64
+2025-03-29 14:32:36,860 - my_logger - INFO - Date
+2020-04-01   -0.01157
+dtype: float64
+2025-03-29 14:32:36,868 - my_logger - INFO - Date
+2020-05-01    0.140071
+dtype: float64
+2025-03-29 14:32:36,876 - my_logger - INFO - Date
+2020-06-01    0.05682
+dtype: float64
+2025-03-29 14:32:42,740 - my_logger - INFO - Date
+2020-01-01    0.119147
+dtype: float64
+2025-03-29 14:32:42,747 - my_logger - INFO - Date
+2020-02-01    0.1652
+dtype: float64
+2025-03-29 14:32:42,756 - my_logger - INFO - Date
+2020-03-01   -0.0374
+dtype: float64
+2025-03-29 14:32:42,764 - my_logger - INFO - Date
+2020-04-01   -0.083245
+dtype: float64
+2025-03-29 14:32:42,772 - my_logger - INFO - Date
+2020-05-01    0.221284
+dtype: float64
+2025-03-29 14:32:42,779 - my_logger - INFO - Date
+2020-06-01    0.083912
+dtype: float64
+2025-03-29 15:04:07,852 - my_logger - INFO - Date
+2020-01-01    0.104286
+dtype: float64
+2025-03-29 15:04:07,861 - my_logger - INFO - Date
+2020-02-01    0.127578
+dtype: float64
+2025-03-29 15:04:07,869 - my_logger - INFO - Date
+2020-03-01   -0.047464
+dtype: float64
+2025-03-29 15:04:07,878 - my_logger - INFO - Date
+2020-04-01   -0.054981
+dtype: float64
+2025-03-29 15:04:07,887 - my_logger - INFO - Date
+2020-05-01    0.199218
+dtype: float64
+2025-03-29 15:04:07,895 - my_logger - INFO - Date
+2020-06-01    0.080693
+dtype: float64
+2025-03-29 15:08:10,173 - my_logger - INFO - Date
+2020-01-01    0.111576
+dtype: float64
+2025-03-29 15:08:10,186 - my_logger - INFO - Date
+2020-02-01    0.149523
+dtype: float64
+2025-03-29 15:08:10,195 - my_logger - INFO - Date
+2020-03-01   -0.033139
+dtype: float64
+2025-03-29 15:08:10,205 - my_logger - INFO - Date
+2020-04-01   -0.07566
+dtype: float64
+2025-03-29 15:08:10,213 - my_logger - INFO - Date
+2020-05-01    0.213784
+dtype: float64
+2025-03-29 15:08:10,222 - my_logger - INFO - Date
+2020-06-01    0.080231
+dtype: float64
+2025-03-29 15:08:51,053 - my_logger - INFO - Date
+2020-01-01    0.131596
+dtype: float64
+2025-03-29 15:08:51,062 - my_logger - INFO - Date
+2020-02-01    0.191493
+dtype: float64
+2025-03-29 15:08:51,070 - my_logger - INFO - Date
+2020-03-01   -0.027406
+dtype: float64
+2025-03-29 15:08:51,078 - my_logger - INFO - Date
+2020-04-01   -0.095618
+dtype: float64
+2025-03-29 15:08:51,087 - my_logger - INFO - Date
+2020-05-01    0.241006
+dtype: float64
+2025-03-29 15:08:51,094 - my_logger - INFO - Date
+2020-06-01    0.088131
+dtype: float64
+2025-03-29 15:12:35,954 - my_logger - INFO - Date
+2020-01-01    0.122393
+dtype: float64
+2025-03-29 15:12:35,962 - my_logger - INFO - Date
+2020-02-01    0.173999
+dtype: float64
+2025-03-29 15:12:35,970 - my_logger - INFO - Date
+2020-03-01   -0.030324
+dtype: float64
+2025-03-29 15:12:35,979 - my_logger - INFO - Date
+2020-04-01   -0.091902
+dtype: float64
+2025-03-29 15:12:35,987 - my_logger - INFO - Date
+2020-05-01    0.229949
+dtype: float64
+2025-03-29 15:12:35,995 - my_logger - INFO - Date
+2020-06-01    0.082657
+dtype: float64
+2025-03-29 15:13:54,162 - my_logger - INFO - Date
+2020-01-01    0.107223
+dtype: float64
+2025-03-29 15:13:54,169 - my_logger - INFO - Date
+2020-02-01    0.143678
+dtype: float64
+2025-03-29 15:13:54,176 - my_logger - INFO - Date
+2020-03-01   -0.037943
+dtype: float64
+2025-03-29 15:13:54,184 - my_logger - INFO - Date
+2020-04-01   -0.067764
+dtype: float64
+2025-03-29 15:13:54,194 - my_logger - INFO - Date
+2020-05-01    0.208479
+dtype: float64
+2025-03-29 15:13:54,202 - my_logger - INFO - Date
+2020-06-01    0.078757
+dtype: float64
+2025-03-29 15:15:56,555 - my_logger - INFO - Date
+2020-01-01    0.122621
+dtype: float64
+2025-03-29 15:15:56,562 - my_logger - INFO - Date
+2020-02-01    0.176306
+dtype: float64
+2025-03-29 15:15:56,570 - my_logger - INFO - Date
+2020-03-01   -0.028454
+dtype: float64
+2025-03-29 15:15:56,578 - my_logger - INFO - Date
+2020-04-01   -0.090959
+dtype: float64
+2025-03-29 15:15:56,585 - my_logger - INFO - Date
+2020-05-01    0.231109
+dtype: float64
+2025-03-29 15:15:56,594 - my_logger - INFO - Date
+2020-06-01    0.085835
+dtype: float64
+2025-03-29 15:17:14,064 - my_logger - INFO - Date
+2020-01-01    0.117625
+dtype: float64
+2025-03-29 15:17:14,072 - my_logger - INFO - Date
+2020-02-01    0.160295
+dtype: float64
+2025-03-29 15:17:14,087 - my_logger - INFO - Date
+2020-03-01   -0.032341
+dtype: float64
+2025-03-29 15:17:14,098 - my_logger - INFO - Date
+2020-04-01   -0.087884
+dtype: float64
+2025-03-29 15:17:14,114 - my_logger - INFO - Date
+2020-05-01    0.22163
+dtype: float64
+2025-03-29 15:17:14,130 - my_logger - INFO - Date
+2020-06-01    0.08369
+dtype: float64
+2025-03-29 15:17:16,185 - my_logger - INFO - Date
+2020-01-01    0.108077
+dtype: float64
+2025-03-29 15:17:16,193 - my_logger - INFO - Date
+2020-02-01    0.141524
+dtype: float64
+2025-03-29 15:17:16,202 - my_logger - INFO - Date
+2020-03-01   -0.035747
+dtype: float64
+2025-03-29 15:17:16,211 - my_logger - INFO - Date
+2020-04-01   -0.077924
+dtype: float64
+2025-03-29 15:17:16,219 - my_logger - INFO - Date
+2020-05-01    0.206937
+dtype: float64
+2025-03-29 15:17:16,228 - my_logger - INFO - Date
+2020-06-01    0.078192
+dtype: float64
+2025-03-29 15:24:09,624 - my_logger - INFO - Date
+2020-01-01    0.118552
+dtype: float64
+2025-03-29 15:24:09,631 - my_logger - INFO - Date
+2020-02-01    0.165346
+dtype: float64
+2025-03-29 15:24:09,640 - my_logger - INFO - Date
+2020-03-01   -0.034415
+dtype: float64
+2025-03-29 15:24:09,648 - my_logger - INFO - Date
+2020-04-01   -0.077583
+dtype: float64
+2025-03-29 15:24:09,655 - my_logger - INFO - Date
+2020-05-01    0.223309
+dtype: float64
+2025-03-29 15:24:09,663 - my_logger - INFO - Date
+2020-06-01    0.083293
+dtype: float64
+2025-03-30 21:19:09,993 - my_logger - INFO - Date
+2020-01-01    0.059783
+dtype: float64
+2025-03-30 21:19:10,138 - my_logger - INFO - Date
+2020-02-01    0.044442
+dtype: float64
+2025-03-30 21:19:10,148 - my_logger - INFO - Date
+2020-03-01   -0.05689
+dtype: float64
+2025-03-30 21:19:10,158 - my_logger - INFO - Date
+2020-04-01   -0.004409
+dtype: float64
+2025-03-30 21:19:10,167 - my_logger - INFO - Date
+2020-05-01    0.133634
+dtype: float64
+2025-03-30 21:19:10,176 - my_logger - INFO - Date
+2020-06-01    0.056139
+dtype: float64
+2025-03-30 21:20:27,989 - my_logger - INFO - Date
+2020-01-01    0.060903
+dtype: float64
+2025-03-30 21:20:27,998 - my_logger - INFO - Date
+2020-02-01    0.03542
+dtype: float64
+2025-03-30 21:20:28,006 - my_logger - INFO - Date
+2020-03-01   -0.062228
+dtype: float64
+2025-03-30 21:20:28,015 - my_logger - INFO - Date
+2020-04-01    0.005936
+dtype: float64
+2025-03-30 21:20:28,024 - my_logger - INFO - Date
+2020-05-01    0.127474
+dtype: float64
+2025-03-30 21:20:28,034 - my_logger - INFO - Date
+2020-06-01    0.057644
+dtype: float64
+2025-03-30 21:21:48,527 - my_logger - INFO - Date
+2020-01-01    0.068925
+dtype: float64
+2025-03-30 21:21:48,534 - my_logger - INFO - Date
+2020-02-01    0.050309
+dtype: float64
+2025-03-30 21:21:48,544 - my_logger - INFO - Date
+2020-03-01   -0.057973
+dtype: float64
+2025-03-30 21:21:48,551 - my_logger - INFO - Date
+2020-04-01   -0.000621
+dtype: float64
+2025-03-30 21:21:48,560 - my_logger - INFO - Date
+2020-05-01    0.140132
+dtype: float64
+2025-03-30 21:21:48,568 - my_logger - INFO - Date
+2020-06-01    0.060829
+dtype: float64
+2025-03-30 21:32:45,945 - my_logger - INFO - Date
+2020-01-01    0.065463
+dtype: float64
+2025-03-30 21:32:45,953 - my_logger - INFO - Date
+2020-02-01    0.041935
+dtype: float64
+2025-03-30 21:32:45,960 - my_logger - INFO - Date
+2020-03-01   -0.05979
+dtype: float64
+2025-03-30 21:32:45,968 - my_logger - INFO - Date
+2020-04-01   -0.001454
+dtype: float64
+2025-03-30 21:32:45,975 - my_logger - INFO - Date
+2020-05-01    0.137552
+dtype: float64
+2025-03-30 21:32:45,983 - my_logger - INFO - Date
+2020-06-01    0.061301
+dtype: float64
+2025-03-30 21:32:46,357 - my_logger - INFO - Date
+2020-07-01   NaN
+dtype: float64
+2025-03-30 21:32:46,367 - my_logger - INFO - Date
+2020-08-01   NaN
+dtype: float64
+2025-03-30 21:32:46,376 - my_logger - INFO - Date
+2020-09-01   NaN
+dtype: float64
+2025-03-30 21:32:46,385 - my_logger - INFO - Date
+2020-10-01   NaN
+dtype: float64
+2025-03-30 21:32:46,394 - my_logger - INFO - Date
+2020-11-01   NaN
+dtype: float64
+2025-03-30 21:32:46,403 - my_logger - INFO - Date
+2020-12-01   NaN
+dtype: float64
+2025-03-30 21:32:47,257 - my_logger - INFO - Date
+2021-01-01    0.031611
+dtype: float64
+2025-03-30 21:32:47,266 - my_logger - INFO - Date
+2021-02-01    0.020204
+dtype: float64
+2025-03-30 21:32:47,277 - my_logger - INFO - Date
+2021-03-01   -0.01085
+dtype: float64
+2025-03-30 21:32:47,288 - my_logger - INFO - Date
+2021-04-01    0.028872
+dtype: float64
+2025-03-30 21:32:47,299 - my_logger - INFO - Date
+2021-05-01    0.022431
+dtype: float64
+2025-03-30 21:32:47,309 - my_logger - INFO - Date
+2021-06-01    0.01098
+dtype: float64
+2025-03-30 21:32:48,036 - my_logger - INFO - Date
+2021-07-01    0.045804
+dtype: float64
+2025-03-30 21:32:48,044 - my_logger - INFO - Date
+2021-08-01    0.040046
+dtype: float64
+2025-03-30 21:32:48,053 - my_logger - INFO - Date
+2021-09-01   -0.000564
+dtype: float64
+2025-03-30 21:32:48,062 - my_logger - INFO - Date
+2021-10-01    0.023005
+dtype: float64
+2025-03-30 21:32:48,071 - my_logger - INFO - Date
+2021-11-01    0.09264
+dtype: float64
+2025-03-30 21:32:48,080 - my_logger - INFO - Date
+2021-12-01    0.026425
+dtype: float64
+2025-03-30 21:32:48,912 - my_logger - INFO - Date
+2022-01-01   -0.007238
+dtype: float64
+2025-03-30 21:32:48,921 - my_logger - INFO - Date
+2022-02-01   -0.055914
+dtype: float64
+2025-03-30 21:32:48,930 - my_logger - INFO - Date
+2022-03-01   -0.006152
+dtype: float64
+2025-03-30 21:32:48,940 - my_logger - INFO - Date
+2022-04-01    0.003574
+dtype: float64
+2025-03-30 21:32:48,950 - my_logger - INFO - Date
+2022-05-01   -0.054499
+dtype: float64
+2025-03-30 21:32:48,958 - my_logger - INFO - Date
+2022-06-01   -0.076927
+dtype: float64
+2025-03-30 21:32:50,032 - my_logger - INFO - Date
+2022-07-01    0.020765
+dtype: float64
+2025-03-30 21:32:50,041 - my_logger - INFO - Date
+2022-08-01    0.029622
+dtype: float64
+2025-03-30 21:32:50,051 - my_logger - INFO - Date
+2022-09-01   -0.078932
+dtype: float64
+2025-03-30 21:32:50,059 - my_logger - INFO - Date
+2022-10-01    0.002389
+dtype: float64
+2025-03-30 21:32:50,070 - my_logger - INFO - Date
+2022-11-01    0.047161
+dtype: float64
+2025-03-30 21:32:50,078 - my_logger - INFO - Date
+2022-12-01   -0.028046
+dtype: float64
+2025-03-30 21:32:51,332 - my_logger - INFO - Date
+2023-01-01    0.019185
+dtype: float64
+2025-03-30 21:32:51,346 - my_logger - INFO - Date
+2023-02-01    0.001585
+dtype: float64
+2025-03-30 21:32:51,357 - my_logger - INFO - Date
+2023-03-01    0.02112
+dtype: float64
+2025-03-30 21:32:51,368 - my_logger - INFO - Date
+2023-04-01    0.037791
+dtype: float64
+2025-03-30 21:32:51,378 - my_logger - INFO - Date
+2023-05-01   -0.023233
+dtype: float64
+2025-03-30 21:32:51,388 - my_logger - INFO - Date
+2023-06-01    0.062427
+dtype: float64
+2025-03-30 21:32:52,461 - my_logger - INFO - Date
+2023-07-01    0.062036
+dtype: float64
+2025-03-30 21:32:52,473 - my_logger - INFO - Date
+2023-08-01   -0.034033
+dtype: float64
+2025-03-30 21:32:52,482 - my_logger - INFO - Date
+2023-09-01   -0.035648
+dtype: float64
+2025-03-30 21:32:52,491 - my_logger - INFO - Date
+2023-10-01   -0.045337
+dtype: float64
+2025-03-30 21:32:52,501 - my_logger - INFO - Date
+2023-11-01    0.056571
+dtype: float64
+2025-03-30 21:32:52,510 - my_logger - INFO - Date
+2023-12-01    0.068414
+dtype: float64
+2025-03-30 21:35:05,355 - my_logger - INFO - Date
+2020-01-01   NaN
+dtype: float64
+2025-03-30 21:35:05,367 - my_logger - INFO - Date
+2020-02-01   NaN
+dtype: float64
+2025-03-30 21:35:05,375 - my_logger - INFO - Date
+2020-03-01   NaN
+dtype: float64
+2025-03-30 21:35:05,384 - my_logger - INFO - Date
+2020-04-01   NaN
+dtype: float64
+2025-03-30 21:35:05,393 - my_logger - INFO - Date
+2020-05-01   NaN
+dtype: float64
+2025-03-30 21:35:05,401 - my_logger - INFO - Date
+2020-06-01   NaN
+dtype: float64
+2025-03-30 21:35:05,727 - my_logger - INFO - Date
+2020-07-01   NaN
+dtype: float64
+2025-03-30 21:35:05,736 - my_logger - INFO - Date
+2020-08-01   NaN
+dtype: float64
+2025-03-30 21:35:05,748 - my_logger - INFO - Date
+2020-09-01   NaN
+dtype: float64
+2025-03-30 21:35:05,755 - my_logger - INFO - Date
+2020-10-01   NaN
+dtype: float64
+2025-03-30 21:35:05,767 - my_logger - INFO - Date
+2020-11-01   NaN
+dtype: float64
+2025-03-30 21:35:05,775 - my_logger - INFO - Date
+2020-12-01   NaN
+dtype: float64
+2025-03-30 21:35:06,291 - my_logger - INFO - Date
+2021-01-01   NaN
+dtype: float64
+2025-03-30 21:35:06,304 - my_logger - INFO - Date
+2021-02-01   NaN
+dtype: float64
+2025-03-30 21:35:06,318 - my_logger - INFO - Date
+2021-03-01   NaN
+dtype: float64
+2025-03-30 21:35:06,327 - my_logger - INFO - Date
+2021-04-01   NaN
+dtype: float64
+2025-03-30 21:35:06,335 - my_logger - INFO - Date
+2021-05-01   NaN
+dtype: float64
+2025-03-30 21:35:06,343 - my_logger - INFO - Date
+2021-06-01   NaN
+dtype: float64
+2025-03-30 21:35:06,820 - my_logger - INFO - Date
+2021-07-01   NaN
+dtype: float64
+2025-03-30 21:35:06,828 - my_logger - INFO - Date
+2021-08-01   NaN
+dtype: float64
+2025-03-30 21:35:06,836 - my_logger - INFO - Date
+2021-09-01   NaN
+dtype: float64
+2025-03-30 21:35:06,846 - my_logger - INFO - Date
+2021-10-01   NaN
+dtype: float64
+2025-03-30 21:35:06,853 - my_logger - INFO - Date
+2021-11-01   NaN
+dtype: float64
+2025-03-30 21:35:06,862 - my_logger - INFO - Date
+2021-12-01   NaN
+dtype: float64
+2025-03-30 21:35:07,376 - my_logger - INFO - Date
+2022-01-01   NaN
+dtype: float64
+2025-03-30 21:35:07,385 - my_logger - INFO - Date
+2022-02-01   NaN
+dtype: float64
+2025-03-30 21:35:07,394 - my_logger - INFO - Date
+2022-03-01   NaN
+dtype: float64
+2025-03-30 21:35:07,404 - my_logger - INFO - Date
+2022-04-01   NaN
+dtype: float64
+2025-03-30 21:35:07,413 - my_logger - INFO - Date
+2022-05-01   NaN
+dtype: float64
+2025-03-30 21:35:07,424 - my_logger - INFO - Date
+2022-06-01   NaN
+dtype: float64
+2025-03-30 21:35:08,074 - my_logger - INFO - Date
+2022-07-01   NaN
+dtype: float64
+2025-03-30 21:35:08,084 - my_logger - INFO - Date
+2022-08-01   NaN
+dtype: float64
+2025-03-30 21:35:08,093 - my_logger - INFO - Date
+2022-09-01   NaN
+dtype: float64
+2025-03-30 21:35:08,106 - my_logger - INFO - Date
+2022-10-01   NaN
+dtype: float64
+2025-03-30 21:35:08,120 - my_logger - INFO - Date
+2022-11-01   NaN
+dtype: float64
+2025-03-30 21:35:08,136 - my_logger - INFO - Date
+2022-12-01   NaN
+dtype: float64
+2025-03-30 21:35:08,920 - my_logger - INFO - Date
+2023-01-01   NaN
+dtype: float64
+2025-03-30 21:35:08,935 - my_logger - INFO - Date
+2023-02-01   NaN
+dtype: float64
+2025-03-30 21:35:08,952 - my_logger - INFO - Date
+2023-03-01   NaN
+dtype: float64
+2025-03-30 21:35:08,967 - my_logger - INFO - Date
+2023-04-01   NaN
+dtype: float64
+2025-03-30 21:35:08,976 - my_logger - INFO - Date
+2023-05-01   NaN
+dtype: float64
+2025-03-30 21:35:08,986 - my_logger - INFO - Date
+2023-06-01   NaN
+dtype: float64
+2025-03-30 21:35:09,600 - my_logger - INFO - Date
+2023-07-01   NaN
+dtype: float64
+2025-03-30 21:35:09,610 - my_logger - INFO - Date
+2023-08-01   NaN
+dtype: float64
+2025-03-30 21:35:09,620 - my_logger - INFO - Date
+2023-09-01   NaN
+dtype: float64
+2025-03-30 21:35:09,632 - my_logger - INFO - Date
+2023-10-01   NaN
+dtype: float64
+2025-03-30 21:35:09,641 - my_logger - INFO - Date
+2023-11-01   NaN
+dtype: float64
+2025-03-30 21:35:09,650 - my_logger - INFO - Date
+2023-12-01   NaN
+dtype: float64

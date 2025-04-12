@@ -11,7 +11,7 @@ from portfolio.forecasting import (
 )
 
 # Portfolio optimization and signals
-from portfolio.optimization import perform_portfolio_optimization
+from portfolio.optimization import perform_portfolio_optimization, perform_portfolio_optimization_3
 from portfolio.utils import (
     update_portfolio_weights,
     calculate_portfolio_performance,
@@ -23,6 +23,7 @@ import numpy as np
 import warnings
 from logger import logger
 import streamlit as st
+from typing import Dict
 
 def normalize_portfolio_weights(portfolio_weights):
     total_weight = sum(portfolio_weights.values())  # Sum of all values in the dictionary
@@ -192,7 +193,7 @@ def simulate_portfolio_allocation(
             tt["EconomicRegime"].iloc[-1] = economic_regime_value
 
             # Perform portfolio optimization based on the economic regime
-            regime_weights = perform_portfolio_optimization(
+            regime_weights = perform_portfolio_optimization_3(
                 tt,
                 asset,
                 min_weight_bound=min_weight_bound,
@@ -344,6 +345,7 @@ class PortfolioSimulator:
         date_list = []
 
         while current_date <= self.end_date:
+            self.performance.to_csv(f"temp_debug_performance_{str(current_date)}.csv")
             tt = prepare_current_data(self.economic_regime, current_date)
 
             if counter % self.rebalance_period == 1:  # Rebalance every `rebalance_period` months
@@ -364,7 +366,7 @@ class PortfolioSimulator:
                 tt["EconomicRegime"].iloc[-1] = economic_regime_value
 
                 # Perform portfolio optimization based on the economic regime
-                regime_weights = perform_portfolio_optimization(
+                regime_weights = perform_portfolio_optimization_3(
                     tt, self.asset, 
                     min_weight_bound=self.min_weight_bound,
                     max_weight_bound=self.max_weight_bound, 
@@ -442,7 +444,7 @@ class PortfolioSimulator:
         current_data["EconomicRegime"].iloc[-1] = economic_regime_value
 
         # Perform portfolio optimization based on the current economic regime
-        regime_weights = perform_portfolio_optimization(
+        regime_weights = perform_portfolio_optimization_3(
             current_data, self.asset, 
             min_weight_bound=self.min_weight_bound,
             max_weight_bound=self.max_weight_bound, 

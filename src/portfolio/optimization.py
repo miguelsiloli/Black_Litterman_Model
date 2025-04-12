@@ -3,12 +3,13 @@ from portfolio.data_processing import trim_data, replace_outliers_with_interpola
 from pypfopt.expected_returns import mean_historical_return
 from pypfopt.risk_models import CovarianceShrinkage
 from pypfopt.efficient_frontier import EfficientFrontier
+import pandas as pd
 
 
-def perform_portfolio_optimization(
+def perform_portfolio_optimization_3(
     tt,
     asset,
-    min_weight_bound=-0.25,
+    min_weight_bound=0,
     max_weight_bound=0.25,
     max_volatility=0.12,
     n_bootstraps=100,
@@ -118,10 +119,20 @@ def perform_portfolio_optimization(
             sample_returns = regime_returns.sample(n=len(regime_returns), replace=True)
 
             # Step 2: Trim the sample returns to avoid extreme values
-            trimmed_sample_returns = trim_data(sample_returns)
+            # reducing the trimming range to be more soft (only super extreme values)
+            # because it was shrinking covariance matrix to zero towards economic periods
+            # with a small sample size
+            trimmed_sample_returns = trim_data(sample_returns, percentile = 3)
             trimmed_sample_returns = replace_outliers_with_interpolation(
-                trimmed_sample_returns
+                df = trimmed_sample_returns,
+                z_thresh = 3.5
             )
+
+            # # adding a noise component to avoid stagnant covariance matrix
+            # noise = np.random.normal(-2e-5, 2e-5, size=trimmed_sample_returns.shape)
+            # trimmed_sample_returns = trimmed_sample_returns + pd.DataFrame(
+            #     noise, index=trimmed_sample_returns.index, columns=trimmed_sample_returns.columns
+            # )
 
             # Step 3: Check if variance is non-zero for all columns
             if not (trimmed_sample_returns.var() == 0).any():
@@ -132,18 +143,31 @@ def perform_portfolio_optimization(
         mu = mean_historical_return(
             trimmed_sample_returns, returns_data=True, frequency=12
         )
-        mu = mu.clip(lower=mu.quantile(0.01), upper=mu.quantile(0.99))
+        # mu = mu.clip(lower=mu.quantile(0.01), upper=mu.quantile(0.99))
 
         # cov matrix
         Sigma = CovarianceShrinkage(
             trimmed_sample_returns, returns_data=True, frequency=12
         ).ledoit_wolf()
 
+        # print("Sigma diagonal:", np.diag(Sigma))
+        # print("Sigma determinant:", np.linalg.det(Sigma))
+        # print("Sigma contains inf:", np.isinf(Sigma).any())
+        # print("Sigma contains nan:", np.isnan(Sigma).any())
+
         ef = EfficientFrontier(
-            mu, Sigma, solver="SCS", weight_bounds=(min_weight_bound, max_weight_bound)
+            mu, Sigma, solver="ECOS", weight_bounds=(min_weight_bound, max_weight_bound)
         )
+
+        # gmv_weights = ef.min_volatility() # Find the GMV weights
+        # Calculate the volatility of this GMV portfolio
+        # gmv_volatility = np.sqrt(ef.portfolio_performance(verbose=False)[1]) # Index 1 is volatility
+
+        # print(f"Iteration {i}: GMV Volatility = {gmv_volatility:.4f}, Target Max Volatility = {max_volatility}")
+
         ef.add_constraint(lambda w: w.sum() == 1)
         ef.efficient_risk(max_volatility, market_neutral=False)
+
         cleaned_weights = ef.clean_weights()
         bootstrapped_weights[i, :] = np.array(list(cleaned_weights.values()))
         # total_weight_sum = np.sum(list(cleaned_weights.values()))

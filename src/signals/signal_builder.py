@@ -5,7 +5,7 @@ from signals.steps import *
 import numpy as np
 
 
-def build_value_signal() -> pd.DataFrame:
+def build_value_signal(value_data) -> pd.DataFrame:
     """
     Builds the value signal for assets by calculating 6-month percentage changes and standardizing the results.
 
@@ -33,7 +33,7 @@ def build_value_signal() -> pd.DataFrame:
     - The function assumes the existence of `read_asset_data()` and `compute_z_scores()` to read and standardize data.
     - The signal is based on the assumption that z-scores outside the range [-1, 1] indicate extreme valuation.
     """
-    value_data = read_asset_data("data/assets.xlsx")
+    # value_data = read_asset_data("data/assets.xlsx")
 
     # Calculate 6-month percentage change and drop NaNs
     value_data = value_data.pct_change(periods=6).dropna()
@@ -47,7 +47,7 @@ def build_value_signal() -> pd.DataFrame:
     return value_signal
 
 
-def build_sentiment_signal() -> pd.DataFrame:
+def build_sentiment_signal(assets) -> pd.DataFrame:
     """
     Builds the sentiment signal by processing sentiment data and correlating it with asset returns.
 
@@ -85,7 +85,7 @@ def build_sentiment_signal() -> pd.DataFrame:
     sentiment_pca = compute_1d_pca(sentiment_zscores)
 
     # Read asset data and compute 3-month percentage change
-    assets = read_asset_data("data/assets.xlsx")
+    # assets = read_asset_data("data/assets.xlsx")
     assets = assets.pct_change(3).dropna()
 
     # Ensure sentiment PCA index is in datetime format
@@ -175,7 +175,7 @@ def build_macro_signal() -> pd.DataFrame:
     return df
 
 
-def build_momentum_signal() -> pd.DataFrame:
+def build_momentum_signal(value_data) -> pd.DataFrame:
     """
     Builds the momentum signal based on asset data by calculating the difference between current values and values from 12 periods ago.
 
@@ -209,7 +209,7 @@ def build_momentum_signal() -> pd.DataFrame:
     - The function calculates momentum by subtracting values from 12 periods ago. A positive result implies an upward trend, and a negative result implies a downward trend.
     """
     # Read asset data
-    value_data = read_asset_data("data/assets.xlsx")
+    # value_data = read_asset_data("data/assets.xlsx")
 
     # Calculate 12-month momentum
     momentum = (value_data - value_data.shift(12)).dropna()

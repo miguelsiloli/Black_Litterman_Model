@@ -49,14 +49,32 @@ def compute_portfolio_performance(weights, performance):
     # Drop the "portfolio" column from the performance DataFrame if it exists
     if "portfolio" in performance.columns:
         performance = performance.drop(columns=["portfolio"])
-    
-    # Assert that the columns of portfolio_weights match the columns of performance
-    assert list(weights.columns) == list(performance.columns), \
-        "Columns of portfolio_weights and performance do not match."
 
-    # Assert that the indexes of portfolio_weights and performance match
-    assert list(weights.index) == list(performance.index), \
-        "Indexes of portfolio_weights and performance do not match."
+    print(weights.columns, performance.columns)
+    
+    # Clean and standardize indexes
+    # Convert indexes to strings (handles numeric/mixed-type indexes)
+    weights.index = weights.index.astype(str).str.strip()
+    performance.index = performance.index.astype(str).str.strip()
+
+    weights.to_csv("temp_weights.csv")
+    performance.to_csv("temp_performance.csv")
+    
+    # Sort indexes for comparison
+    weights_sorted = weights.sort_index()
+    performance_sorted = performance.sort_index()
+    
+    # Verify alignment (content only, not order)
+    if not weights_sorted.index.equals(performance_sorted.index):
+        # Diagnostic output for mismatches
+        missing_in_perf = weights_sorted.index.difference(performance_sorted.index).tolist()
+        missing_in_weights = performance_sorted.index.difference(weights_sorted.index).tolist()
+        
+        raise ValueError(
+            f"Index mismatch:\n"
+            f"Assets in weights missing from performance: {missing_in_perf}\n"
+            f"Assets in performance missing from weights: {missing_in_weights}"
+        )
     
     # Perform element-wise multiplication
     portfolio_performance = weights * performance

@@ -29,6 +29,67 @@ from signals import *
 from utils import calculate_final_metrics, print_performance_metrics, filter_and_concat_last_row, compute_portfolio_performance
 from layout.plots import plot_growth_inflation_line, plot_metrics_by_economic_regime, plot_portfolio_weights, plot_cumulative_returns, plot_signals, plot_economic_regime_pie_chart
 from layout.components.app import render_sidebar
+import os
+
+def merge_asset_dataframes(primary_df, external_path):
+    """
+    Merge a primary asset dataframe with an external dataframe from a specified path.
+    
+    This function:
+    1. Loads the external dataframe if it exists
+    2. Converts both dataframes' indexes to datetime
+    3. Finds the intersection of dates
+    4. Combines the dataframes along columns while preserving the common date range
+    
+    Parameters:
+    -----------
+    primary_df : pandas.DataFrame
+        The primary asset dataframe
+    external_path : str
+        Path to the Excel file containing external asset data
+        
+    Returns:
+    --------
+    pandas.DataFrame
+        Combined dataframe with all columns from both sources and only common dates
+    """
+    # Return primary dataframe if external doesn't exist
+    if not os.path.exists(external_path):
+        return primary_df
+    
+    try:
+        # Load external data
+        external_df = pd.read_excel(external_path, index_col=0)
+        
+        # Ensure both dataframes have datetime index
+        primary_df.index = pd.to_datetime(primary_df.index)
+        external_df.index = pd.to_datetime(external_df.index)
+        
+        # Find common dates
+        common_dates = primary_df.index.intersection(external_df.index)
+        
+        if len(common_dates) == 0:
+            print(f"Warning: No common dates found between dataframes. Using primary dataframe only.")
+            return primary_df
+        
+        # Filter both to common dates
+        primary_filtered = primary_df.loc[common_dates]
+        external_filtered = external_df.loc[common_dates]
+        
+        # Combine along columns
+        combined_df = pd.concat([primary_filtered, external_filtered], axis=1)
+        
+        print(f"Combined {len(primary_filtered.columns)} columns from primary with "
+              f"{len(external_filtered.columns)} columns from external source. "
+              f"Result has {len(combined_df.columns)} columns and {len(combined_df)} rows.")
+        
+        return combined_df
+        
+    except Exception as e:
+        print(f"Error merging dataframes: {str(e)}")
+        # Return original if there's an error
+        return primary_df
+
 st.set_page_config(layout="wide")
 
 config = render_sidebar()
@@ -43,13 +104,19 @@ rebalance_period = config["rebalance_period"]
 
 # Load asset data from Excel
 assets = read_asset_data("data/assets.xlsx")
+external_data_path = "data/assets_yfinance.xlsx"
+
+assets = merge_asset_dataframes(assets, external_data_path)
+
 asset = assets.pct_change(1)
 
 # growth and inflation need to be within -4, 4 because they are standardized
 macro_signal = build_macro_signal()
-momentum_signal = build_momentum_signal()
-value_signal = build_value_signal()
-sentiment_signal = build_sentiment_signal()
+momentum_signal = build_momentum_signal(assets)
+value_signal = build_value_signal(assets)
+sentiment_signal = build_sentiment_signal(assets)
+
+asset.to_csv("temp_asset.csv")
 
 # Filter out specific columns that are not needed in performance calculations
 performance = asset.drop(
@@ -61,6 +128,7 @@ performance = asset.drop(
     axis=1,
 ).loc[(asset.index >= start_date) & (asset.index <= end_date)]
 performance["portfolio"] = 0  # Initialize a 'portfolio' column with zeros
+performance.to_csv("temp_performance_base.csv")
 
 columns_list = list(performance.columns)
 columns_list.remove("portfolio")

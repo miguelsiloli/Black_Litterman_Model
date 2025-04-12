@@ -70,12 +70,19 @@ def apply_technical_signals(
     - It also assumes that the signals are numeric and are structured such that the value at a given date represents the signal strength for that asset.
     - Signals are weighted by 30%, meaning the final adjustment to portfolio weights is capped at ±30%.
     """
+
+    # Convert signals to monthly frequency (start of month) and forward-fill missing values
+    # TODO: Move this outside, this is just a temporary fix
+    value_signal = value_signal.asfreq("MS", method="ffill")  # "MS" = Month Start
+    momentum_signal = momentum_signal.asfreq("MS", method="ffill")
+    sentiment_signal = sentiment_signal.asfreq("MS", method="ffill")
+
     # Filter the value, momentum, and sentiment signals for the current date
-    v1 = value_signal[value_signal.index == current_date]
+    v1 = value_signal[value_signal.index == pd.Timestamp(current_date)]
     v1.columns = asset.columns
-    m1 = momentum_signal[momentum_signal.index == current_date]
+    m1 = momentum_signal[momentum_signal.index == pd.Timestamp(current_date)]
     m1.columns = asset.columns
-    s1 = sentiment_signal[sentiment_signal.index == current_date]
+    s1 = sentiment_signal[sentiment_signal.index == pd.Timestamp(current_date)]
     s1.columns = asset.columns
 
     # Combine the signals into one DataFrame
