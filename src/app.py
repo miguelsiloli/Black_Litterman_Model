@@ -238,6 +238,8 @@ with tabs[0]:
         st.title("Cumulative Portfolio Returns")
         plot_cumulative_returns(regime_portfolio_cumulative_returns, equal_portfolio_returns, static_portfolio_returns)
 
+        st.title("Dynamic Weight Portfolio")
         plot_portfolio_weights(dmvo_portfolio_weights)
 
+        st.title("Equal Weight portfolio")
         plot_portfolio_weights(future_weights_df)

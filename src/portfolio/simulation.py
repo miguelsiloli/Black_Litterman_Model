@@ -11,7 +11,7 @@ from portfolio.forecasting import (
 )
 
 # Portfolio optimization and signals
-from portfolio.optimization import perform_portfolio_optimization, perform_portfolio_optimization_3
+from portfolio.optimization import perform_portfolio_optimization_3
 from portfolio.utils import (
     update_portfolio_weights,
     calculate_portfolio_performance,
